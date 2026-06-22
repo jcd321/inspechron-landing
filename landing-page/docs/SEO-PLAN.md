@@ -68,14 +68,17 @@
 
 ---
 
-### Día 4 — 24 jun 2026 — Revisión de errores en GSC
+### Día 4 — 22 jun 2026 — Revisión de indexación en GSC ✅ COMPLETADO
 
 **Tareas del día**
 
-- [ ] Revisar GSC → **Páginas** (indexadas / no indexadas)
-- [ ] Corregir cualquier error 404, noindex o bloqueo en robots.txt
+- [x] Revisar GSC → **Inspección de URL** → `https://inspechron.com/` → **Indexada**
+- [x] Revisar GSC → **Inspección de URL** → `https://inspechron.com/privacy/` → **Indexada**
+- [ ] Revisar GSC → **Páginas** (informe general de indexadas / no indexadas)
 - [ ] Buscar en Google: `site:inspechron.com` y anotar resultados
 - [ ] Anotar en este doc cuántas páginas aparecen indexadas
+
+**Resumen día 4 (parcial):** ✅ Las 2 URLs del sitemap están indexadas en Google.
 
 ---
 

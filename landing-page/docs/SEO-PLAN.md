@@ -88,7 +88,7 @@
 - [x] Instagram → bio con enlace a `https://inspechron.com`
 - [x] Facebook → sitio web + enlaces revisados y ajustados
 - [x] Enlaces unificados (https, coherencia de marca)
-- [ ] Google Play → URL del sitio web en la ficha (confirmar cuando puedas)
+- [x] Google Play → URL del sitio web: `https://inspechron.com`
 - [ ] Email de firma → enlace a la web (opcional)
 
 **Resumen día 5:** ✅ Redes sociales enlazando correctamente a la web.

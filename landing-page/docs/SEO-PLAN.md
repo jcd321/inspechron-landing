@@ -74,11 +74,10 @@
 
 - [x] Revisar GSC → **Inspección de URL** → `https://inspechron.com/` → **Indexada**
 - [x] Revisar GSC → **Inspección de URL** → `https://inspechron.com/privacy/` → **Indexada**
-- [ ] Revisar GSC → **Páginas** (informe general de indexadas / no indexadas)
-- [ ] Buscar en Google: `site:inspechron.com` y anotar resultados
-- [ ] Anotar en este doc cuántas páginas aparecen indexadas
+- [x] Buscar en Google: `site:inspechron.com` → **2 páginas** aparecen
+- [x] Anotado: 2 URLs indexadas (home + privacidad)
 
-**Resumen día 4 (parcial):** ✅ Las 2 URLs del sitemap están indexadas en Google.
+**Resumen día 4:** ✅ Sitio visible en Google. Búsqueda `site:inspechron.com` muestra home y privacidad.
 
 ---
 
@@ -299,4 +298,4 @@
 
 _Añade aquí observaciones cada día (impresiones GSC, errores, ideas de contenido)._
 
-- **22 jun 2026:** ✅ Día 3 completado. Bing importado + sitemap enviado. Home indexada en Google.
+- **22 jun 2026:** ✅ Día 4 completado. `site:inspechron.com` muestra 2 páginas indexadas.

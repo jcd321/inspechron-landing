@@ -42,10 +42,13 @@
 
 **Tareas del día**
 
-- [ ] En GSC → **Sitemaps** → enviar `sitemap.xml`
+- [x] En GSC → **Sitemaps** → enviar `https://inspechron.com/sitemap.xml`
+- [x] Google detectó **2 páginas** en el sitemap
 - [ ] En GSC → **Inspección de URL** → pegar `https://inspechron.com/` → **Solicitar indexación**
 - [ ] Repetir solicitud para `https://inspechron.com/privacy/`
 - [ ] Revisar que no haya errores en el informe de Cobertura
+
+**Resumen parcial día 2:** Sitemap enviado correctamente. Falta solicitar indexación manual de las URLs.
 
 ---
 

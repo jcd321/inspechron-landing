@@ -1,0 +1,228 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-50: #eff6ff;
+  --color-brand-100: #dbeafe;
+  --color-brand-200: #bfdbfe;
+  --color-brand-300: #93c5fd;
+  --color-brand-400: #60a5fa;
+  --color-brand-500: #2563eb;
+  --color-brand-600: #1d4ed8;
+  --color-brand-700: #1e40af;
+  --color-brand-800: #1e3a8a;
+  --color-brand-900: #172554;
+  --color-brand-950: #0f172a;
+
+  --color-accent-400: #38bdf8;
+  --color-accent-500: #0ea5e9;
+  --color-accent-600: #0284c7;
+
+  --color-surface: #ffffff;
+  --color-surface-elevated: #ffffff;
+  --color-section-muted: #f7f9fc;
+  --color-section-accent: #f4f8ff;
+  --color-muted: #64748b;
+  --color-border: #e5eaf3;
+
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+
+  --shadow-card: 0 4px 20px rgba(0, 0, 0, 0.04);
+  --shadow-card-hover: 0 12px 30px rgba(0, 0, 0, 0.08);
+  --shadow-device: 0 20px 50px rgba(30, 58, 138, 0.14);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    overflow-x: clip;
+  }
+
+  body {
+    @apply bg-white text-brand-950 font-sans antialiased;
+    overflow-x: clip;
+  }
+}
+
+@layer utilities {
+  .section-container {
+    @apply mx-auto max-w-6xl px-4 sm:px-6 lg:px-8;
+  }
+
+  .section-white {
+    @apply bg-white;
+  }
+
+  .section-muted {
+    background-color: var(--color-section-muted);
+  }
+
+  .section-accent {
+    background-color: var(--color-section-accent);
+  }
+
+  .section-heading {
+    @apply text-3xl font-bold tracking-tight text-brand-950 md:text-4xl;
+  }
+
+  .section-lead {
+    @apply mx-auto mt-4 max-w-3xl text-base leading-relaxed text-muted md:text-lg;
+  }
+
+  .card-premium {
+    @apply rounded-2xl border bg-white ease-out;
+    border-color: #e5eaf3;
+    box-shadow: var(--shadow-card);
+    transition:
+      transform 250ms ease-out,
+      box-shadow 250ms ease-out,
+      border-color 250ms ease-out;
+  }
+
+  @media (hover: hover) and (pointer: fine) {
+    .card-premium:hover {
+      transform: translateY(-4px);
+      border-color: var(--color-brand-300);
+      box-shadow: var(--shadow-card-hover);
+    }
+
+    .btn-primary:hover {
+      transform: scale(1.03);
+    }
+
+    .btn-primary.btn-primary-solid:hover {
+      box-shadow: 0 14px 32px rgba(30, 58, 138, 0.32);
+    }
+
+    .btn-primary.btn-primary-light:hover {
+      box-shadow: 0 20px 44px rgba(0, 0, 0, 0.22);
+    }
+  }
+
+  .btn-primary {
+    transition:
+      transform 200ms ease-out,
+      box-shadow 200ms ease-out,
+      background-color 200ms ease-out,
+      border-color 200ms ease-out;
+  }
+
+  .scroll-carousel {
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior-x: contain;
+    scrollbar-width: none;
+  }
+
+  .scroll-carousel::-webkit-scrollbar {
+    display: none;
+  }
+
+  .reveal {
+    opacity: 0;
+    transform: translateY(20px);
+    transition:
+      opacity 500ms ease-out,
+      transform 500ms ease-out;
+  }
+
+  .reveal.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .reveal-item {
+    opacity: 0;
+    transform: translateY(20px);
+    transition:
+      opacity 500ms ease-out,
+      transform 500ms ease-out;
+  }
+
+  .reveal-item.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .reveal-cta {
+    opacity: 0;
+    transform: scale(0.98);
+    transition:
+      opacity 600ms ease-out,
+      transform 600ms ease-out;
+  }
+
+  .reveal-cta.is-visible {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  .floating-cta {
+    bottom: max(24px, env(safe-area-inset-bottom, 0px));
+    right: max(24px, env(safe-area-inset-right, 0px));
+  }
+
+  .card-premium-static:hover {
+    transform: none;
+    border-color: #e5eaf3;
+    box-shadow: var(--shadow-card);
+  }
+
+  .fade-in {
+    animation: fadeIn 0.6s ease-out forwards;
+  }
+
+  .fade-in-delay-1 {
+    animation: fadeIn 0.6s ease-out 0.1s forwards;
+    opacity: 0;
+  }
+
+  .fade-in-delay-2 {
+    animation: fadeIn 0.6s ease-out 0.2s forwards;
+    opacity: 0;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .reveal,
+    .reveal-item,
+    .reveal-cta {
+      opacity: 1;
+      transform: none;
+      transition: none;
+      transition-delay: 0ms !important;
+    }
+
+    .card-premium:hover {
+      transform: none;
+    }
+
+    .btn-primary:hover {
+      transform: none;
+    }
+
+    .floating-cta {
+      transition: opacity 200ms ease-out;
+    }
+  }
+
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

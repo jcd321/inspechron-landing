@@ -1,0 +1,328 @@
+import type { Translation } from './types'
+
+export const en: Translation = {
+  meta: {
+    title: 'Inspechron — Intelligent real-time inspection',
+    description:
+      'B2B AI-assisted technical inspection platform. Detect defects in the field, generate professional PDF reports in seconds. Available on Google Play.',
+    ogTitle: 'Inspechron — AI-powered technical inspection',
+    ogDescription:
+      'Capture photos, detect cracks and moisture with real-time AI, and generate comprehensive reports in seconds. Built for inspectors, builders, and insurers.',
+    keywords:
+      'technical inspection, AI inspection, PDF reports, home inspectors, construction, quality control, Inspechron, property inspection, defect detection',
+  },
+  nav: {
+    features: 'Features',
+    pricing: 'Pricing',
+    faq: 'FAQ',
+    investors: 'Investors',
+    contact: 'Contact',
+    download: 'Download',
+  },
+  a11y: {
+    skipToContent: 'Skip to content',
+    mainNav: 'Main navigation',
+    openMenu: 'Open menu',
+    closeMenu: 'Close menu',
+    languageSelector: 'Select language',
+  },
+  hero: {
+    badge: 'Available on Google Play · Active pilot',
+    headline: 'AI-powered technical inspection in real time',
+    slogan: 'From hours of manual documentation to professional reports in seconds.',
+    subtitle:
+      'Capture field evidence, automatically detect defects, and generate professional reports ready for clients, contractors, builders, and insurers.',
+    ctaPrimary: 'Try for free',
+    ctaSecondary: 'Request B2B demo',
+    mockupAlt: 'Inspechron screenshot showing defect detection',
+    mockupPlaceholder: 'Add your screenshot at /public/screenshots/hero-mockup.png',
+  },
+  problemSolution: {
+    title: 'From hours of manual work to professional reports in seconds',
+    subtitle:
+      'Reduce documentation, evidence organization, and report generation time by up to 80%.',
+    problemTitle: 'The problem today',
+    problems: [
+      'Evidence scattered across WhatsApp, email, and photo galleries',
+      'Hours lost documenting findings after every inspection',
+      'Risk of human error and undetected defects',
+      'Fragmented information between inspectors, contractors, and office',
+    ],
+    solutionTitle: 'The Inspechron solution',
+    solutions: [
+      'Automatically detect damage while you inspect',
+      'Centralize all evidence in one place',
+      'Generate professional reports in seconds',
+      'Scale operations without increasing administrative workload',
+    ],
+  },
+  walkthrough: {
+    title: 'Less documentation. More inspections.',
+    subtitle:
+      'Capture evidence, detect damage, and generate professional reports with AI.',
+    steps: [
+      {
+        title: 'Welcome to Inspechron',
+        tagline: 'Start a professional inspection in seconds',
+        description:
+          'Set up your project and start documenting findings from the first second.',
+      },
+      {
+        title: 'Dashboard',
+        tagline: 'Your entire operation in one place',
+        description:
+          'Projects, inspections, and reports organized — no spreadsheets or WhatsApp.',
+      },
+      {
+        title: 'Create project',
+        tagline: 'Never lose control of a property',
+        description:
+          'Every property stays organized with its history, evidence, and reports.',
+      },
+      {
+        title: 'Create sections',
+        tagline: 'Structured and consistent inspections',
+        description:
+          'Divide each property by area to document everything without omissions.',
+      },
+      {
+        title: 'AI detection',
+        tagline: 'Detect problems before they cost money',
+        description:
+          'AI identifies cracks, moisture, mold, and defects while you inspect.',
+      },
+      {
+        title: 'PDF report',
+        tagline: 'Deliver professional reports in seconds',
+        description:
+          'Generate reports ready for clients, contractors, or insurers with one click.',
+      },
+    ],
+  },
+  promoBanner: {
+    alt: 'Inspechron — AI-powered inspection platform',
+  },
+  features: {
+    title: 'Key Features',
+    subtitle:
+      'Inspect faster, document better, and generate professional reports with AI.',
+    items: [
+      {
+        title: 'Inspect faster',
+        description:
+          'Get real-time assistance while inspecting and reduce time in the field.',
+      },
+      {
+        title: 'Detect damage with AI',
+        description:
+          'Identify cracks, moisture, and paint deterioration with intelligent analysis.',
+      },
+      {
+        title: 'Generate reports in seconds',
+        description:
+          'Create professional reports ready to deliver with evidence and technical analysis.',
+      },
+      {
+        title: 'Organize properties and projects',
+        description:
+          'Manage inspections, properties, and findings from a single platform.',
+      },
+      {
+        title: 'Never lose evidence',
+        description:
+          'Every photo is automatically linked to the property, area, and corresponding finding.',
+      },
+      {
+        title: 'Your information always protected',
+        description:
+          'Never lose a report. Your inspections are backed up and organized automatically.',
+      },
+    ],
+  },
+  audience: {
+    title: 'Who uses Inspechron?',
+    subtitle:
+      'Built for professionals who need to inspect faster, document better, and reduce operational costs.',
+    segments: [
+      {
+        title: 'Independent Inspectors',
+        description:
+          'Generate more reports in less time with AI-powered professional documentation.',
+      },
+      {
+        title: 'Property Managers',
+        description:
+          'Centralize inspections, photo evidence, and reports on a single platform.',
+      },
+      {
+        title: 'Builders and Inspection Companies',
+        description:
+          'Detect damage, document findings, and deliver professional reports to clients and contractors.',
+      },
+      {
+        title: 'Insurance Adjusters and Appraisers',
+        description:
+          'Document technical evidence and generate consistent reports for assessments and claims.',
+      },
+    ],
+  },
+  pricing: {
+    title: 'Simple, transparent pricing',
+    subtitle: 'Start free. Pay only when you generate a professional report.',
+    free: {
+      title: 'Free Trial',
+      price: '$0',
+      description:
+        'Get welcome credits to try Inspechron with no commitment.',
+      features: [
+        'Real-time AI damage detection',
+        'Project and property organization',
+        'Welcome credits included',
+        'No credit card required',
+      ],
+    },
+    payPerReport: {
+      title: 'Professional AI Report',
+      badge: 'Most Popular',
+      price: '$11.99',
+      priceSuffix: '/ report',
+      description: '1 credit = 1 complete technical report',
+      features: [
+        'Professional PDF report ready to deliver',
+        'Documented photo evidence',
+        'AI-generated technical analysis',
+        'Automatic risk classification',
+      ],
+    },
+    comingSoon: {
+      title: 'Team Plans (Coming Soon)',
+      description:
+        'Advanced roles, multi-user collaboration, inspector management, and enterprise billing.',
+    },
+    cta: 'Start free on Google Play',
+  },
+  socialProof: {
+    title: 'Early traction',
+    badges: [
+      'Available on Google Play',
+      'Active pilot with inspectors',
+      'Production platform',
+      'Advanced AI + automated reports',
+    ],
+    testimonialPlaceholder:
+      'Reserved space for pilot inspector testimonials. Add real quotes when available.',
+  },
+  faq: {
+    title: 'Frequently asked questions',
+    items: [
+      {
+        question: 'Can I really generate professional reports in seconds?',
+        answer:
+          'Yes. Inspechron automates damage detection, organizes photo evidence, and generates technical reports ready to deliver, significantly reducing manual documentation time.',
+      },
+      {
+        question: 'What types of damage can the AI detect?',
+        answer:
+          'The AI is currently trained to identify cracks, moisture, mold, paint deterioration, and other common visible defects during a technical inspection.',
+      },
+      {
+        question: 'How does the credit system work?',
+        answer:
+          'You receive welcome credits to try the platform. Each credit allows you to generate one complete professional technical report. You only pay when you need to generate new reports.',
+      },
+      {
+        question: 'Do I need internet to use the application?',
+        answer:
+          'Photos can be captured in the field. AI detection and report generation require a connection to process information securely in the cloud.',
+      },
+      {
+        question: 'Who uses Inspechron?',
+        answer:
+          'Independent inspectors, inspection companies, builders, property managers, adjusters, and professionals who need to document findings quickly and accurately.',
+      },
+      {
+        question: 'Are my data and reports secure?',
+        answer:
+          'Yes. All photos, projects, and reports are stored securely and remain organized and available whenever you need them.',
+      },
+      {
+        question: 'Is it available for companies and teams?',
+        answer:
+          'Yes. Inspechron is designed for both independent professionals and organizations managing multiple inspections, properties, or projects.',
+      },
+      {
+        question: 'What platforms is it available on?',
+        answer:
+          'Inspechron is currently available for Android via Google Play. New platforms and enterprise features will be added soon.',
+      },
+      {
+        question: 'How much time can I save with Inspechron?',
+        answer:
+          'Many professionals significantly reduce the time spent documenting findings, organizing photos, and writing reports, allowing them to complete more inspections in less time.',
+      },
+    ],
+  },
+  investors: {
+    title: 'Opportunity for investors and strategic partners',
+    subtitle:
+      'Inspechron is transforming technical documentation through artificial intelligence, automating processes that still consume hours of manual work.',
+    badge: 'Investment opportunity',
+    whyNowTitle: 'Why now?',
+    whyNowText:
+      'Thousands of inspections are still documented manually with scattered photos, spreadsheets, and hours spent writing reports. Inspechron reduces that process to seconds through artificial intelligence.',
+    bullets: [
+      {
+        title: 'Growing market',
+        description:
+          'Inspectors, builders, insurers, property managers, and quality control companies.',
+      },
+      {
+        title: 'Operational product',
+        description:
+          'Available on Google Play with pilot users and report generation in production.',
+      },
+      {
+        title: 'Proprietary technology',
+        description:
+          'AI-assisted visual detection and automated generation of technical reports.',
+      },
+      {
+        title: 'Scalable model',
+        description:
+          'Pay-per-report with a credit system and expansion toward enterprise licenses.',
+      },
+      {
+        title: 'Competitive advantage',
+        description:
+          'Real-time detection during inspection and professional report delivery in seconds.',
+      },
+    ],
+    contact: 'Contact for investment or partnership:',
+    cta: 'Talk to the founding team',
+  },
+  finalCta: {
+    title: 'Start generating professional reports in seconds',
+    subtitle:
+      'Download Inspechron for free and turn hours of manual documentation into technical reports ready to deliver.',
+    supportText:
+      'Detect damage, organize evidence, and generate professional reports from a single application.',
+    ctaPrimary: 'Try Free on Google Play',
+    ctaSecondary: 'Request B2B Demo',
+    trustCopy:
+      'No mandatory subscription. Welcome credits included so you can try your first inspection.',
+  },
+  floatingCta: {
+    label: '🚀 Try Free',
+    ariaLabel: 'Try Inspechron for free on Google Play',
+  },
+  footer: {
+    tagline: 'Intelligent real-time inspection',
+    product: 'Product',
+    legal: 'Legal',
+    contact: 'Contact',
+    privacy: 'Privacy policy',
+    playStore: 'Google Play',
+    followUs: 'Follow us',
+    copyright: '© 2026 Inspechron. All rights reserved.',
+  },
+}

@@ -3,7 +3,7 @@
 **Sitio:** https://inspechron.com  
 **Objetivo:** Aparecer en Google para búsquedas de inspección técnica, inspectores y la marca Inspechron.  
 **Inicio del plan:** 21 de junio de 2026  
-**Última actualización:** 21 de junio de 2026 — Día 1 completado ✅
+**Última actualización:** 22 de junio de 2026 — Día 3 completado ✅
 
 ---
 
@@ -11,7 +11,7 @@
 
 | Semana | Enfoque | Estado |
 |--------|---------|--------|
-| Semana 1 | Indexación en Google | 🟢 Días 1–2 completados |
+| Semana 1 | Indexación en Google y Bing | 🟢 Días 1–3 completados |
 | Semana 2 | Optimización on-page | ⬜ Pendiente |
 | Semana 3 | Contenido y long-tail | ⬜ Pendiente |
 | Semana 4 | Autoridad y off-page | ⬜ Pendiente |
@@ -52,14 +52,19 @@
 
 ---
 
-### Día 3 — 23 jun 2026 — Bing Webmaster Tools
+### Día 3 — 22 jun 2026 — Bing Webmaster Tools ✅ COMPLETADO
 
 **Tareas del día**
 
-- [ ] Crear cuenta en [Bing Webmaster Tools](https://www.bing.com/webmasters)
-- [ ] Importar sitio desde Google Search Console (opción más rápida)
-- [ ] O verificar manualmente y enviar `sitemap.xml`
-- [ ] Comprobar que Bing detecta las 2 URLs del sitemap
+- [x] Crear cuenta en [Bing Webmaster Tools](https://www.bing.com/webmasters)
+- [x] Importar sitio desde Google Search Console (cuenta `jcd.cuello@gmail.com`)
+- [x] Confirmar que `inspechron.com` aparece verificado en Bing
+- [x] Enviar sitemap: `https://inspechron.com/sitemap.xml` (estado: Processing)
+- [ ] Comprobar en 24–48 h que Bing detecta las 2 URLs (pendiente automático)
+
+**Resumen día 3:** ✅ Sitio importado y sitemap enviado en Bing. Datos en procesamiento (hasta 48 h).
+
+**Bonus del día:** ✅ Google indexó la home — "La URL está en Google" en GSC.
 
 ---
 
@@ -291,4 +296,4 @@
 
 _Añade aquí observaciones cada día (impresiones GSC, errores, ideas de contenido)._
 
-- **21 jun 2026:** ✅ Días 1–2 completados. Dominio verificado, sitemap enviado, indexación solicitada para home y privacidad.
+- **22 jun 2026:** ✅ Día 3 completado. Bing importado + sitemap enviado. Home indexada en Google.

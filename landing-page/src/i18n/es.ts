@@ -2,14 +2,14 @@ import type { Translation } from './types'
 
 export const es: Translation = {
   meta: {
-    title: 'Inspechron — Inspección inteligente en tiempo real',
+    title: 'Inspechron — App de inspección técnica con IA para inspectores',
     description:
-      'Plataforma B2B de inspección técnica asistida por IA. Detecta defectos en campo, genera informes PDF profesionales en segundos. Disponible en Google Play.',
-    ogTitle: 'Inspechron — Inspección técnica con IA',
+      'App para inspectores: detecta grietas y humedad con IA, genera informes PDF en segundos. Prueba gratis en Google Play. Para constructoras y aseguradoras.',
+    ogTitle: 'Inspechron — Inspección técnica con IA para inspectores',
     ogDescription:
-      'Captura fotos, detecta grietas y humedad con IA en tiempo real, y genera informes integrales en segundos. Para inspectores, constructoras y aseguradoras.',
+      'Detecta defectos en campo y entrega informes profesionales en segundos. App gratuita para probar en Google Play.',
     keywords:
-      'inspección técnica, inspección con IA, informes PDF, inspectores, construcción, control de calidad, Inspechron, inspección inmobiliaria, detección de defectos',
+      'inspección técnica, app inspección técnica, inspección con IA, informes PDF, inspectores, software para inspectores, construcción, Inspechron, inspección inmobiliaria, informe inspección PDF',
   },
   nav: {
     features: 'Funciones',
@@ -34,7 +34,7 @@ export const es: Translation = {
       'Captura evidencia en campo, detecta defectos automáticamente y genera informes profesionales listos para clientes, contratistas, constructoras y aseguradoras.',
     ctaPrimary: 'Probar gratis',
     ctaSecondary: 'Solicitar demo B2B',
-    mockupAlt: 'Captura de pantalla de Inspechron mostrando detección de defectos',
+    mockupAlt: 'App Inspechron: inspección técnica con detección de defectos por IA',
     mockupPlaceholder: 'Añade tu screenshot en /public/screenshots/hero-mockup.png',
   },
   problemSolution: {

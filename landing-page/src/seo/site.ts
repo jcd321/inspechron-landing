@@ -1,4 +1,5 @@
 export const SITE_URL = 'https://inspechron.com'
+export const CANONICAL_HOME = `${SITE_URL}/`
 export const SITE_NAME = 'Inspechron'
 export const DEFAULT_LOCALE = 'es' as const
 

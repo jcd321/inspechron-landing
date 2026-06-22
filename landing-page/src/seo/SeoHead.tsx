@@ -1,6 +1,6 @@
 import { useEffect } from 'react'
 import { useTranslation } from '../i18n'
-import { SEO_DEFAULTS, SITE_URL } from './site'
+import { SEO_DEFAULTS, CANONICAL_HOME } from './site'
 import { buildStructuredData } from './structured-data'
 
 const STRUCTURED_DATA_ID = 'inspechron-structured-data'
@@ -34,7 +34,7 @@ export default function SeoHead() {
 
   useEffect(() => {
     const isEn = locale === 'en'
-    const canonicalUrl = SITE_URL
+    const canonicalUrl = CANONICAL_HOME
 
     document.documentElement.lang = isEn ? 'en' : 'es'
     document.title = t.meta.title

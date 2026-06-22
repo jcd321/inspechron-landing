@@ -3,7 +3,7 @@
 **Sitio:** https://inspechron.com  
 **Objetivo:** Aparecer en Google para búsquedas de inspección técnica, inspectores y la marca Inspechron.  
 **Inicio del plan:** 21 de junio de 2026  
-**Última actualización:** 22 de junio de 2026 — Día 5 completado ✅
+**Última actualización:** 22 de junio de 2026 — Días 8–9 en código ✅
 
 ---
 
@@ -12,7 +12,7 @@
 | Semana | Enfoque | Estado |
 |--------|---------|--------|
 | Semana 1 | Indexación y enlaces off-page | 🟢 Días 1–5 completados |
-| Semana 2 | Optimización on-page | ⬜ Pendiente |
+| Semana 2 | Optimización on-page | 🟡 Días 8–9 en código |
 | Semana 3 | Contenido y long-tail | ⬜ Pendiente |
 | Semana 4 | Autoridad y off-page | ⬜ Pendiente |
 
@@ -119,17 +119,18 @@
 
 ## Semana 2 — Optimización on-page
 
-### Día 8 — 28 jun 2026 — Título optimizado
+### Día 8 — 22 jun 2026 — Título optimizado ✅ COMPLETADO (código)
 
-- [ ] Actualizar `<title>` con keywords: inspección técnica, inspectores, IA
-- [ ] Sincronizar `src/i18n/es.ts` y `src/i18n/en.ts`
-- [ ] Deploy y solicitar reindexación en GSC
+- [x] Actualizar `<title>` con keywords: inspección técnica, inspectores, IA
+- [x] Sincronizar `src/i18n/es.ts`, `src/i18n/en.ts` e `index.html`
+- [x] Unificar canonical (`CANONICAL_HOME`) para evitar duplicados en GSC
+- [ ] Deploy en Hostinger + solicitar reindexación en GSC
 
-### Día 9 — 29 jun 2026 — Meta description
+### Día 9 — 22 jun 2026 — Meta description ✅ COMPLETADO (código)
 
-- [ ] Reescribir description con CTA y palabras clave de intención
-- [ ] Actualizar Open Graph y Twitter Cards
-- [ ] Deploy
+- [x] Reescribir description con CTA y palabras clave de intención
+- [x] Actualizar Open Graph y Twitter Cards
+- [ ] Deploy en Hostinger
 
 ### Día 10 — 30 jun 2026 — Alt text en imágenes
 

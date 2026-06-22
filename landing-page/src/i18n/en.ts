@@ -2,14 +2,14 @@ import type { Translation } from './types'
 
 export const en: Translation = {
   meta: {
-    title: 'Inspechron — Intelligent real-time inspection',
+    title: 'Inspechron — AI Technical Inspection App for Home Inspectors',
     description:
-      'B2B AI-assisted technical inspection platform. Detect defects in the field, generate professional PDF reports in seconds. Available on Google Play.',
-    ogTitle: 'Inspechron — AI-powered technical inspection',
+      'Inspect faster with AI: detect cracks, moisture, and defects in the field. Generate professional PDF reports in seconds. Free trial on Google Play.',
+    ogTitle: 'Inspechron — AI Technical Inspection for Home Inspectors',
     ogDescription:
-      'Capture photos, detect cracks and moisture with real-time AI, and generate comprehensive reports in seconds. Built for inspectors, builders, and insurers.',
+      'Detect field defects and deliver professional reports in seconds. Free app trial on Google Play.',
     keywords:
-      'technical inspection, AI inspection, PDF reports, home inspectors, construction, quality control, Inspechron, property inspection, defect detection',
+      'technical inspection, AI inspection app, PDF reports, home inspectors, inspection software, construction, Inspechron, property inspection, inspection report PDF',
   },
   nav: {
     features: 'Features',
@@ -34,7 +34,7 @@ export const en: Translation = {
       'Capture field evidence, automatically detect defects, and generate professional reports ready for clients, contractors, builders, and insurers.',
     ctaPrimary: 'Try for free',
     ctaSecondary: 'Request B2B demo',
-    mockupAlt: 'Inspechron screenshot showing defect detection',
+    mockupAlt: 'Inspechron app: AI-powered technical inspection and defect detection',
     mockupPlaceholder: 'Add your screenshot at /public/screenshots/hero-mockup.png',
   },
   problemSolution: {

@@ -11,7 +11,7 @@
 
 | Semana | Enfoque | Estado |
 |--------|---------|--------|
-| Semana 1 | Indexación en Google | 🟡 En curso |
+| Semana 1 | Indexación en Google | 🟢 Días 1–2 completados |
 | Semana 2 | Optimización on-page | ⬜ Pendiente |
 | Semana 3 | Contenido y long-tail | ⬜ Pendiente |
 | Semana 4 | Autoridad y off-page | ⬜ Pendiente |
@@ -38,17 +38,17 @@
 
 ---
 
-### Día 2 — 21 jun 2026 — Enviar sitemap y solicitar indexación 🟡 EN CURSO
+### Día 2 — 21 jun 2026 — Enviar sitemap y solicitar indexación ✅ COMPLETADO
 
 **Tareas del día**
 
 - [x] En GSC → **Sitemaps** → enviar `https://inspechron.com/sitemap.xml`
 - [x] Google detectó **2 páginas** en el sitemap
-- [ ] En GSC → **Inspección de URL** → pegar `https://inspechron.com/` → **Solicitar indexación**
-- [ ] Repetir solicitud para `https://inspechron.com/privacy/`
-- [ ] Revisar que no haya errores en el informe de Cobertura
+- [x] Solicitar indexación de `https://inspechron.com/`
+- [x] Solicitar indexación de `https://inspechron.com/privacy/`
+- [ ] Revisar en 3–5 días el informe de **Páginas** en GSC (pendiente automático)
 
-**Resumen parcial día 2:** Sitemap enviado correctamente. Falta solicitar indexación manual de las URLs.
+**Resumen día 2:** ✅ Sitemap enviado. Indexación solicitada para home y privacidad. Google rastreará en 1–7 días.
 
 ---
 
@@ -291,4 +291,4 @@
 
 _Añade aquí observaciones cada día (impresiones GSC, errores, ideas de contenido)._
 
-- **21 jun 2026:** ✅ Día 1 completado. Dominio verificado en GSC vía DNS (Hostinger). Siguiente: enviar sitemap e indexar URLs.
+- **21 jun 2026:** ✅ Días 1–2 completados. Dominio verificado, sitemap enviado, indexación solicitada para home y privacidad.

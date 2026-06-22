@@ -3,7 +3,7 @@
 **Sitio:** https://inspechron.com  
 **Objetivo:** Aparecer en Google para búsquedas de inspección técnica, inspectores y la marca Inspechron.  
 **Inicio del plan:** 21 de junio de 2026  
-**Última actualización:** 21 de junio de 2026
+**Última actualización:** 21 de junio de 2026 — Día 1 completado ✅
 
 ---
 
@@ -28,17 +28,17 @@
 - [x] Auditar estado actual: `robots.txt` y `sitemap.xml` ya configurados en producción
 - [x] Preparar meta tag de verificación GSC en `index.html` (listo para pegar tu código)
 - [x] Actualizar `lastmod` del sitemap a fecha actual
-- [ ] **TÚ:** Crear cuenta en [Google Search Console](https://search.google.com/search-console)
-- [ ] **TÚ:** Añadir propiedad `https://inspechron.com`
-- [ ] **TÚ:** Verificar dominio (DNS recomendado, o meta tag HTML)
-- [ ] **TÚ:** Si usas meta tag: pegar código en `index.html`, hacer deploy, y pulsar Verificar en GSC
-- [ ] **TÚ:** Confirmar que `https://inspechron.com/robots.txt` responde correctamente en GSC
+- [x] **TÚ:** Crear cuenta en [Google Search Console](https://search.google.com/search-console)
+- [x] **TÚ:** Añadir propiedad `inspechron.com` (verificación por DNS)
+- [x] **TÚ:** Verificar dominio vía registro TXT en Hostinger
+- [x] **TÚ:** Propiedad verificada correctamente (21 jun 2026)
+- [x] **TÚ:** Confirmar que `https://inspechron.com/robots.txt` responde correctamente
 
-**Resumen del día 1 (código):** Documento creado, sitio preparado para verificación. Falta que completes los pasos manuales en Search Console.
+**Resumen del día 1:** ✅ Completado. Dominio verificado en GSC por DNS (Hostinger). Google ya reconoce que eres dueño de inspechron.com.
 
 ---
 
-### Día 2 — 22 jun 2026 — Enviar sitemap y solicitar indexación
+### Día 2 — 21 jun 2026 — Enviar sitemap y solicitar indexación 🟡 EN CURSO
 
 **Tareas del día**
 
@@ -288,4 +288,4 @@
 
 _Añade aquí observaciones cada día (impresiones GSC, errores, ideas de contenido)._
 
-- **21 jun 2026:** Plan iniciado. Sitio no indexado aún (`site:inspechron.com` sin resultados). Prioridad: Search Console.
+- **21 jun 2026:** ✅ Día 1 completado. Dominio verificado en GSC vía DNS (Hostinger). Siguiente: enviar sitemap e indexar URLs.

@@ -5,6 +5,12 @@
 <IfModule mod_rewrite.c>
   RewriteEngine On
   RewriteBase /
+
+  # Canonical: HTTPS + sin www
+  RewriteCond %{HTTPS} off [OR]
+  RewriteCond %{HTTP_HOST} ^www\.inspechron\.com$ [NC]
+  RewriteRule ^ https://inspechron.com%{REQUEST_URI} [L,R=301]
+
   RewriteRule ^index\.html$ - [L]
   RewriteRule ^(robots\.txt|sitemap\.xml)$ - [L]
   RewriteCond %{REQUEST_FILENAME} !-f

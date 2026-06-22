@@ -3,7 +3,7 @@
 **Sitio:** https://inspechron.com  
 **Objetivo:** Aparecer en Google para búsquedas de inspección técnica, inspectores y la marca Inspechron.  
 **Inicio del plan:** 21 de junio de 2026  
-**Última actualización:** 22 de junio de 2026 — Día 3 completado ✅
+**Última actualización:** 22 de junio de 2026 — Día 5 completado ✅
 
 ---
 
@@ -11,7 +11,7 @@
 
 | Semana | Enfoque | Estado |
 |--------|---------|--------|
-| Semana 1 | Indexación en Google y Bing | 🟢 Días 1–3 completados |
+| Semana 1 | Indexación y enlaces off-page | 🟢 Días 1–5 completados |
 | Semana 2 | Optimización on-page | ⬜ Pendiente |
 | Semana 3 | Contenido y long-tail | ⬜ Pendiente |
 | Semana 4 | Autoridad y off-page | ⬜ Pendiente |
@@ -81,14 +81,17 @@
 
 ---
 
-### Día 5 — 25 jun 2026 — Enlaces desde tus canales
+### Día 5 — 22 jun 2026 — Enlaces desde tus canales ✅ COMPLETADO
 
 **Tareas del día**
 
-- [ ] Instagram → bio con enlace a `https://inspechron.com`
-- [ ] Facebook → sección "Acerca de" / sitio web con enlace
-- [ ] Google Play → URL del sitio web en la ficha de la app
-- [ ] Email de firma → enlace a la web (si usas email profesional)
+- [x] Instagram → bio con enlace a `https://inspechron.com`
+- [x] Facebook → sitio web + enlaces revisados y ajustados
+- [x] Enlaces unificados (https, coherencia de marca)
+- [ ] Google Play → URL del sitio web en la ficha (confirmar cuando puedas)
+- [ ] Email de firma → enlace a la web (opcional)
+
+**Resumen día 5:** ✅ Redes sociales enlazando correctamente a la web.
 
 ---
 
@@ -298,4 +301,4 @@
 
 _Añade aquí observaciones cada día (impresiones GSC, errores, ideas de contenido)._
 
-- **22 jun 2026:** ✅ Día 4 completado. `site:inspechron.com` muestra 2 páginas indexadas.
+- **22 jun 2026:** ✅ Día 5 completado. Instagram y Facebook enlazan a https://inspechron.com.

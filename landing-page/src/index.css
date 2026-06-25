@@ -38,8 +38,13 @@
   }
 
   body {
-    @apply bg-white text-brand-950 font-sans antialiased;
+    @apply bg-white text-brand-950 antialiased;
+    font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
     overflow-x: clip;
+  }
+
+  body.fonts-loaded {
+    font-family: var(--font-sans);
   }
 }
 

@@ -1,5 +1,6 @@
+import OptimizedPicture from './OptimizedPicture'
 import { useTranslation } from '../i18n'
-import { PLAY_STORE_URL, HERO_BANNER_URL } from '../config'
+import { PLAY_STORE_URL } from '../config'
 
 export default function HeroBanner() {
   const { t } = useTranslation()
@@ -13,14 +14,14 @@ export default function HeroBanner() {
         className="mx-auto block max-w-[1024px]"
         aria-label={t.promoBanner.alt}
       >
-        <img
-          src={HERO_BANNER_URL}
+        <OptimizedPicture
+          baseSrc="/banners/hero-banner"
           alt={t.promoBanner.alt}
           width={1024}
           height={512}
-          decoding="async"
-          className="block h-auto w-full"
+          loading="eager"
           fetchPriority="high"
+          className="block h-auto w-full"
         />
       </a>
     </section>

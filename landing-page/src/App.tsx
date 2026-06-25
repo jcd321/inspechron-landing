@@ -22,36 +22,43 @@ function useAnalytics() {
   useEffect(() => {
     if (!ANALYTICS_ID) return
 
-    if (ANALYTICS_ID.startsWith('G-')) {
-      const loader = document.createElement('script')
-      loader.async = true
-      loader.src = `https://www.googletagmanager.com/gtag/js?id=${ANALYTICS_ID}`
-      document.head.appendChild(loader)
+    const loadAnalytics = () => {
+      if (ANALYTICS_ID.startsWith('G-')) {
+        const loader = document.createElement('script')
+        loader.async = true
+        loader.src = `https://www.googletagmanager.com/gtag/js?id=${ANALYTICS_ID}`
+        document.head.appendChild(loader)
 
-      const inline = document.createElement('script')
-      inline.textContent = `
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', '${ANALYTICS_ID}');
-      `
-      document.head.appendChild(inline)
-
-      return () => {
-        loader.remove()
-        inline.remove()
+        const inline = document.createElement('script')
+        inline.textContent = `
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', '${ANALYTICS_ID}');
+        `
+        document.head.appendChild(inline)
+        return
       }
+
+      const script = document.createElement('script')
+      script.defer = true
+      script.dataset.domain = 'inspechron.com'
+      script.src = 'https://plausible.io/js/script.js'
+      document.head.appendChild(script)
     }
 
-    const script = document.createElement('script')
-    script.defer = true
-    script.dataset.domain = 'inspechron.com'
-    script.src = 'https://plausible.io/js/script.js'
-    document.head.appendChild(script)
+    const schedule =
+      'requestIdleCallback' in window
+        ? (cb: () => void) => {
+            const id = window.requestIdleCallback(cb)
+            return () => window.cancelIdleCallback(id)
+          }
+        : (cb: () => void) => {
+            const id = globalThis.setTimeout(cb, 2000)
+            return () => globalThis.clearTimeout(id)
+          }
 
-    return () => {
-      script.remove()
-    }
+    return schedule(loadAnalytics)
   }, [])
 }
 

@@ -12,7 +12,7 @@
 | Semana | Enfoque | Estado |
 |--------|---------|--------|
 | Semana 1 | Indexación y enlaces off-page | 🟢 Completada (días 1–7) |
-| Semana 2 | Optimización on-page | 🟡 Días 8–12 ✅ | Días 13–14 pendientes |
+| Semana 2 | Optimización on-page | 🟢 Completada (días 8–14) |
 | Semana 3 | Contenido y long-tail | ⬜ Pendiente |
 | Semana 4 | Autoridad y off-page | ⬜ Pendiente |
 
@@ -174,13 +174,14 @@
 - [x] Cuenta Google Analytics 4 — propiedad `ai-home-inspector-pro`
 - [x] Measurement ID `G-386LPNJDHN` en `src/config.ts`
 - [x] Script gtag.js integrado en `App.tsx`
-- [ ] Deploy en Hostinger + verificar visitas en tiempo real
+- [x] Deploy en Hostinger + visitas en tiempo real verificadas (24 jun 2026)
 
-### Día 14 — 4 jul 2026 — Velocidad (Core Web Vitals)
+### Día 14 — 4 jul 2026 — Velocidad (Core Web Vitals) ✅ COMPLETADO
 
-- [ ] Probar en [PageSpeed Insights](https://pagespeed.web.dev/)
-- [ ] Corregir problemas críticos (LCP, CLS, INP)
-- [ ] Revisar informe en GSC → Experiencia
+- [x] PageSpeed móvil auditado — SEO 100, Rendimiento 72 (LCP 5.8s)
+- [x] PageSpeed escritorio auditado — Rendimiento 99, SEO 100
+- [x] Optimización aplicada: WebP, fonts async, cache `.htaccess`, `llms.txt`, accesibilidad
+- [ ] Re-test PageSpeed tras deploy (verificar mejora LCP móvil)
 
 ---
 
@@ -326,6 +327,6 @@ _Añade aquí observaciones cada día (impresiones GSC, errores, ideas de conten
 - **22 jun 2026:** ✅ Días 8–9 desplegados. Title nuevo visible en producción. Canonical unificado.
 - **22 jun 2026:** ✅ Favicon real desplegado desde logo oficial. Esperar 1–4 semanas en Google SERP.
 - **21 jun 2026:** ✅ Días 10–12 desplegados (alt text, sección SEO, auditoría H1).
-- **24 jun 2026:** ✅ Política de privacidad real en `/privacy/`. Play Store URL actualizada. Reindexación solicitada (home + privacy).
+- **24 jun 2026:** ✅ GA4 activo (`G-386LPNJDHN`). PageSpeed auditado. Optimización WebP + fonts + cache desplegada.
 - **Pendiente:** Google puede tardar días/semanas en actualizar title/description en resultados de búsqueda.
 - **Pendiente:** Bing sitemap — comprobar si pasó de "Processing" a "Success".

@@ -22,6 +22,7 @@ export interface Translation {
     openMenu: string
     closeMenu: string
     languageSelector: string
+    footerNav: string
   }
   hero: {
     badge: string

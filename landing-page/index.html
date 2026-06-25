@@ -58,15 +58,23 @@
     />
     <meta name="twitter:image" content="https://inspechron.com/banners/og-image.png" />
 
-    <!-- Performance: LCP preload -->
-    <link rel="preload" as="image" href="/banners/hero-banner.png" fetchpriority="high" />
+    <!-- Performance: LCP preload (WebP) + non-blocking fonts -->
+    <link rel="preload" as="image" href="/banners/hero-banner.webp" type="image/webp" fetchpriority="high" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      rel="preload"
+      as="style"
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
-      rel="stylesheet"
+      onload="this.onload=null;this.rel='stylesheet'"
     />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      />
+    </noscript>
 
     <!-- JSON-LD fallback for crawlers without JS -->
     <script type="application/ld+json">

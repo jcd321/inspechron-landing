@@ -11,30 +11,33 @@ export default function Footer() {
   const { t } = useTranslation()
 
   return (
-    <footer className="border-t border-brand-800 bg-brand-950 pb-24 text-brand-300 sm:pb-12">
+    <footer className="border-t border-brand-800 bg-brand-950 pb-24 text-brand-200 sm:pb-12" aria-labelledby="footer-heading">
       <div className="section-container py-12">
+        <h2 id="footer-heading" className="sr-only">
+          {t.a11y.footerNav}
+        </h2>
         <div className="grid gap-10 md:grid-cols-4">
           <div className="md:col-span-1">
             <div className="flex flex-col items-start gap-1">
               <Logo variant="white" className="h-14 w-auto sm:h-[3.75rem] md:h-16" />
-              <p className="text-sm leading-snug text-brand-300">{t.footer.tagline}</p>
+              <p className="text-sm leading-snug text-brand-200">{t.footer.tagline}</p>
             </div>
-            <p className="mt-5 text-xs font-semibold uppercase tracking-wider text-brand-400">
+            <p className="mt-5 text-xs font-semibold uppercase tracking-wider text-brand-100">
               {t.footer.followUs}
             </p>
             <SocialLinks className="mt-2" />
           </div>
 
           <div>
-            <h4 className="text-sm font-semibold text-white">{t.footer.product}</h4>
+            <h3 className="text-sm font-semibold text-white">{t.footer.product}</h3>
             <ul className="mt-3 space-y-2 text-sm">
               <li>
-                <a href="#features" className="hover:text-white">
+                <a href="#features" className="text-brand-200 hover:text-white">
                   {t.nav.features}
                 </a>
               </li>
               <li>
-                <a href="#pricing" className="hover:text-white">
+                <a href="#pricing" className="text-brand-200 hover:text-white">
                   {t.nav.pricing}
                 </a>
               </li>
@@ -43,7 +46,7 @@ export default function Footer() {
                   href={PLAY_STORE_URL}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:text-white"
+                  className="text-brand-200 hover:text-white"
                 >
                   {t.footer.playStore}
                 </a>
@@ -52,10 +55,10 @@ export default function Footer() {
           </div>
 
           <div>
-            <h4 className="text-sm font-semibold text-white">{t.footer.legal}</h4>
+            <h3 className="text-sm font-semibold text-white">{t.footer.legal}</h3>
             <ul className="mt-3 space-y-2 text-sm">
               <li>
-                <a href={PRIVACY_POLICY_URL} className="hover:text-white">
+                <a href={PRIVACY_POLICY_URL} className="text-brand-200 hover:text-white">
                   {t.footer.privacy}
                 </a>
               </li>
@@ -63,10 +66,10 @@ export default function Footer() {
           </div>
 
           <div>
-            <h4 className="text-sm font-semibold text-white">{t.footer.contact}</h4>
+            <h3 className="text-sm font-semibold text-white">{t.footer.contact}</h3>
             <ul className="mt-3 space-y-2 text-sm">
               <li>
-                <a href={`mailto:${CONTACT_EMAIL}`} className="hover:text-white">
+                <a href={`mailto:${CONTACT_EMAIL}`} className="text-brand-200 hover:text-white">
                   {CONTACT_EMAIL}
                 </a>
               </li>

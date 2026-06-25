@@ -1,4 +1,5 @@
 import { ArrowRight, Sparkles } from 'lucide-react'
+import OptimizedPicture from './OptimizedPicture'
 import { useTranslation } from '../i18n'
 import { PLAY_STORE_URL, CONTACT_EMAIL } from '../config'
 
@@ -58,13 +59,12 @@ export default function Hero() {
 
           <div className="fade-in-delay-1 relative">
             <div className="overflow-hidden rounded-2xl shadow-[var(--shadow-device)] ring-1 ring-brand-900/5">
-              <img
-                src="/screenshots/hero-mockup.png"
+              <OptimizedPicture
+                baseSrc="/screenshots/hero-mockup"
                 alt={t.hero.mockupAlt}
                 width={600}
                 height={800}
                 loading="lazy"
-                decoding="async"
                 className="w-full"
               />
             </div>

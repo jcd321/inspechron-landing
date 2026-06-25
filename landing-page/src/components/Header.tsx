@@ -51,7 +51,7 @@ export default function Header() {
             <a
               key={link.key}
               href={link.href}
-              className="whitespace-nowrap text-sm font-medium text-brand-800/70 transition-colors hover:text-brand-800"
+              className="whitespace-nowrap text-sm font-medium text-brand-800 transition-colors hover:text-brand-900"
             >
               {t.nav[link.key]}
             </a>

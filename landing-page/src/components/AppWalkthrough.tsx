@@ -1,13 +1,14 @@
 import { useTranslation } from '../i18n'
+import OptimizedPicture from './OptimizedPicture'
 import { Reveal, RevealGroup, RevealItem } from './Reveal'
 
 const WALKTHROUGH_IMAGES = [
-  '/screenshots/walkthrough/01-splash.png',
-  '/screenshots/walkthrough/02-dashboard.png',
-  '/screenshots/walkthrough/03-new-project.png',
-  '/screenshots/walkthrough/04-new-section.png',
-  '/screenshots/walkthrough/05-camera-detection.png',
-  '/screenshots/walkthrough/06-report.png',
+  '/screenshots/walkthrough/01-splash',
+  '/screenshots/walkthrough/02-dashboard',
+  '/screenshots/walkthrough/03-new-project',
+  '/screenshots/walkthrough/04-new-section',
+  '/screenshots/walkthrough/05-camera-detection',
+  '/screenshots/walkthrough/06-report',
 ]
 
 export default function AppWalkthrough() {
@@ -30,13 +31,12 @@ export default function AppWalkthrough() {
                 <div className="bg-gradient-to-b from-brand-50/80 to-white p-5 pb-4">
                   <div className="overflow-hidden rounded-xl shadow-[var(--shadow-device)] ring-1 ring-brand-900/5">
                     <div className="relative aspect-[4/5] overflow-hidden bg-brand-950">
-                      <img
-                        src={WALKTHROUGH_IMAGES[index]}
+                      <OptimizedPicture
+                        baseSrc={WALKTHROUGH_IMAGES[index]}
                         alt={step.imageAlt}
                         width={280}
                         height={350}
                         loading="lazy"
-                        decoding="async"
                         className="h-full w-full object-cover object-center"
                       />
                       <span className="absolute left-3 top-3 flex h-8 w-8 items-center justify-center rounded-full bg-brand-800 text-sm font-bold text-white shadow-md">

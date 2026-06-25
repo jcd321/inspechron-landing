@@ -25,6 +25,7 @@ export const es: Translation = {
     openMenu: 'Abrir menú',
     closeMenu: 'Cerrar menú',
     languageSelector: 'Seleccionar idioma',
+    footerNav: 'Pie de página',
   },
   hero: {
     badge: 'Disponible en Google Play · Piloto activo',

@@ -3,7 +3,7 @@
 **Sitio:** https://inspechron.com  
 **Objetivo:** Aparecer en Google para búsquedas de inspección técnica, inspectores y la marca Inspechron.  
 **Inicio del plan:** 21 de junio de 2026  
-**Última actualización:** 21 de junio de 2026 — Semana 2 días 10–12 en código ✅ | Deploy pendiente
+**Última actualización:** 24 de junio de 2026 — Privacidad en web ✅ | Reindexación home + privacy solicitada ✅
 
 ---
 
@@ -12,7 +12,7 @@
 | Semana | Enfoque | Estado |
 |--------|---------|--------|
 | Semana 1 | Indexación y enlaces off-page | 🟢 Completada (días 1–7) |
-| Semana 2 | Optimización on-page | 🟡 Días 8–12 en código — deploy + días 13–14 pendientes |
+| Semana 2 | Optimización on-page | 🟡 Días 8–12 ✅ | Días 13–14 pendientes |
 | Semana 3 | Contenido y long-tail | ⬜ Pendiente |
 | Semana 4 | Autoridad y off-page | ⬜ Pendiente |
 
@@ -129,7 +129,7 @@
 - [x] Sincronizar `src/i18n/es.ts`, `src/i18n/en.ts` e `index.html`
 - [x] Unificar canonical (`CANONICAL_HOME`) para evitar duplicados en GSC
 - [x] Deploy en Hostinger — title en vivo: *"Inspechron — App de inspección técnica con IA para inspectores"*
-- [ ] Solicitar reindexación en GSC (recomendado tras cada deploy SEO)
+- [x] Solicitar reindexación en GSC (24 jun 2026 — home)
 
 ### Día 9 — 22 jun 2026 — Meta description ✅ COMPLETADO
 
@@ -145,14 +145,14 @@
 - [x] `AppWalkthrough.tsx` usa `step.imageAlt` en lugar del título
 - [x] Logo: alt *"Inspechron — app de inspección técnica con IA"*
 - [x] Promo banner ya tenía alt en i18n
-- [ ] Deploy
+- [x] Deploy (24 jun 2026)
 
-### Día 11 — 1 jul 2026 — Más contenido en home ✅ COMPLETADO (código)
+### Día 11 — 1 jul 2026 — Más contenido en home ✅ COMPLETADO
 
 - [x] Sección `SeoContent.tsx` (~650 palabras ES / EN)
 - [x] H2 principal + 4 H3 con keywords long-tail
 - [x] Integrada en `App.tsx` (entre Pricing y FAQ)
-- [ ] Deploy y solicitar indexación en GSC
+- [x] Deploy y solicitar indexación en GSC (24 jun 2026 — home)
 
 ### Día 12 — 2 jul 2026 — Jerarquía de encabezados ✅ AUDITADO
 
@@ -160,6 +160,14 @@
 - [x] Cada sección tiene su `<h2>`; subsecciones usan `<h3>` / `<h4>` correctamente
 - [x] Nueva sección SEO sigue la jerarquía H2 → H3
 - [x] No se requieren correcciones
+
+### Privacidad — migración GitHub → web ✅ COMPLETADO (24 jun 2026)
+
+- [x] Contenido legal publicado en `https://inspechron.com/privacy/`
+- [x] URL actualizada en Google Play Console
+- [ ] Enviar cambio a revisión en Play Console (botón "Enviar 1 cambio a revisión")
+- [x] Solicitar indexación de `/privacy/` en GSC
+- [ ] (Opcional) Actualizar README en repo GitHub con enlace a URL oficial
 
 ### Día 13 — 3 jul 2026 — Analytics
 
@@ -317,6 +325,6 @@ _Añade aquí observaciones cada día (impresiones GSC, errores, ideas de conten
 - **22 jun 2026:** ✅ Días 8–9 desplegados. Title nuevo visible en producción. Canonical unificado.
 - **22 jun 2026:** ✅ Favicon real desplegado desde logo oficial. Esperar 1–4 semanas en Google SERP.
 - **21 jun 2026:** ✅ Días 10–12 desplegados (alt text, sección SEO, auditoría H1).
-- **24 jun 2026:** ✅ Política de privacidad real publicada en `/privacy/` (antes placeholder).
+- **24 jun 2026:** ✅ Política de privacidad real en `/privacy/`. Play Store URL actualizada. Reindexación solicitada (home + privacy).
 - **Pendiente:** Google puede tardar días/semanas en actualizar title/description en resultados de búsqueda.
 - **Pendiente:** Bing sitemap — comprobar si pasó de "Processing" a "Success".

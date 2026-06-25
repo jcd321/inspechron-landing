@@ -14,5 +14,5 @@ export const PRIVACY_POLICY_URL = '/privacy'
 
 export { SITE_URL } from './seo/site'
 
-// Placeholder — replace with your analytics ID when ready
-export const ANALYTICS_ID = ''
+// Google Analytics 4 — Measurement ID from analytics.google.com
+export const ANALYTICS_ID = 'G-386LPNJDHN'

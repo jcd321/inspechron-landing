@@ -22,6 +22,27 @@ function useAnalytics() {
   useEffect(() => {
     if (!ANALYTICS_ID) return
 
+    if (ANALYTICS_ID.startsWith('G-')) {
+      const loader = document.createElement('script')
+      loader.async = true
+      loader.src = `https://www.googletagmanager.com/gtag/js?id=${ANALYTICS_ID}`
+      document.head.appendChild(loader)
+
+      const inline = document.createElement('script')
+      inline.textContent = `
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', '${ANALYTICS_ID}');
+      `
+      document.head.appendChild(inline)
+
+      return () => {
+        loader.remove()
+        inline.remove()
+      }
+    }
+
     const script = document.createElement('script')
     script.defer = true
     script.dataset.domain = 'inspechron.com'

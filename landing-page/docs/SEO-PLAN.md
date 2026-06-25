@@ -316,7 +316,7 @@ _Añade aquí observaciones cada día (impresiones GSC, errores, ideas de conten
 - **22 jun 2026:** ✅ Día 5 completado. Instagram y Facebook enlazan a https://inspechron.com.
 - **22 jun 2026:** ✅ Días 8–9 desplegados. Title nuevo visible en producción. Canonical unificado.
 - **22 jun 2026:** ✅ Favicon real desplegado desde logo oficial. Esperar 1–4 semanas en Google SERP.
-- **21 jun 2026:** ✅ Días 10–12 completados en código (alt text, sección SEO, auditoría H1). Pendiente deploy.
-- **Pendiente:** `/privacy/` sigue siendo placeholder — Google puede mostrar texto genérico en el snippet.
+- **21 jun 2026:** ✅ Días 10–12 desplegados (alt text, sección SEO, auditoría H1).
+- **24 jun 2026:** ✅ Política de privacidad real publicada en `/privacy/` (antes placeholder).
 - **Pendiente:** Google puede tardar días/semanas en actualizar title/description en resultados de búsqueda.
 - **Pendiente:** Bing sitemap — comprobar si pasó de "Processing" a "Success".

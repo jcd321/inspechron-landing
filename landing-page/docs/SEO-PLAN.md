@@ -3,7 +3,7 @@
 **Sitio:** https://inspechron.com  
 **Objetivo:** Aparecer en Google para búsquedas de inspección técnica, inspectores y la marca Inspechron.  
 **Inicio del plan:** 21 de junio de 2026  
-**Última actualización:** 22 de junio de 2026 — Días 8–9 en código ✅
+**Última actualización:** 21 de junio de 2026 — Semana 2 días 10–12 en código ✅ | Deploy pendiente
 
 ---
 
@@ -11,8 +11,8 @@
 
 | Semana | Enfoque | Estado |
 |--------|---------|--------|
-| Semana 1 | Indexación y enlaces off-page | 🟢 Días 1–5 completados |
-| Semana 2 | Optimización on-page | 🟡 Días 8–9 en código |
+| Semana 1 | Indexación y enlaces off-page | 🟢 Completada (días 1–7) |
+| Semana 2 | Optimización on-page | 🟡 Días 8–12 en código — deploy + días 13–14 pendientes |
 | Semana 3 | Contenido y long-tail | ⬜ Pendiente |
 | Semana 4 | Autoridad y off-page | ⬜ Pendiente |
 
@@ -95,60 +95,71 @@
 
 ---
 
-### Día 6 — 26 jun 2026 — Comprobar indexación
+### Día 6 — 26 jun 2026 — Comprobar indexación ✅ COMPLETADO
 
 **Tareas del día**
 
-- [ ] Buscar `site:inspechron.com` en Google
-- [ ] Buscar `Inspechron` en Google
+- [x] Buscar `site:inspechron.com` en Google → 2 páginas indexadas
+- [x] Buscar `Inspechron` en Google → aparece la marca
 - [ ] Revisar GSC → Rendimiento (si ya hay datos de impresiones)
-- [ ] Si no hay indexación: volver a solicitar indexación de la home
+- [x] Home indexada — no fue necesario volver a solicitar indexación
+
+**Resumen día 6:** ✅ Sitio visible. Búsqueda de marca funciona.
 
 ---
 
-### Día 7 — 27 jun 2026 — Cierre semana 1
+### Día 7 — 27 jun 2026 — Cierre semana 1 ✅ COMPLETADO
 
 **Tareas del día**
 
-- [ ] Repetir solicitud de indexación en GSC si sigue sin aparecer
-- [ ] Verificar que redes sociales enlazan correctamente a la web
-- [ ] Actualizar registro diario en este documento
-- [ ] Marcar semana 1 como completada si la home ya está indexada
+- [x] Indexación confirmada — no hizo falta repetir solicitud
+- [x] Redes sociales enlazan correctamente a la web
+- [x] Registro diario actualizado
+- [x] Semana 1 marcada como completada
+
+**Resumen día 7:** ✅ Semana 1 cerrada. Base de indexación lista para optimización on-page.
 
 ---
 
 ## Semana 2 — Optimización on-page
 
-### Día 8 — 22 jun 2026 — Título optimizado ✅ COMPLETADO (código)
+### Día 8 — 22 jun 2026 — Título optimizado ✅ COMPLETADO
 
 - [x] Actualizar `<title>` con keywords: inspección técnica, inspectores, IA
 - [x] Sincronizar `src/i18n/es.ts`, `src/i18n/en.ts` e `index.html`
 - [x] Unificar canonical (`CANONICAL_HOME`) para evitar duplicados en GSC
-- [ ] Deploy en Hostinger + solicitar reindexación en GSC
+- [x] Deploy en Hostinger — title en vivo: *"Inspechron — App de inspección técnica con IA para inspectores"*
+- [ ] Solicitar reindexación en GSC (recomendado tras cada deploy SEO)
 
-### Día 9 — 22 jun 2026 — Meta description ✅ COMPLETADO (código)
+### Día 9 — 22 jun 2026 — Meta description ✅ COMPLETADO
 
 - [x] Reescribir description con CTA y palabras clave de intención
 - [x] Actualizar Open Graph y Twitter Cards
-- [ ] Deploy en Hostinger
+- [x] Deploy en Hostinger confirmado
 
-### Día 10 — 30 jun 2026 — Alt text en imágenes
+**Bonus (extra del plan):** Favicon real generado desde logo oficial (`favicon-16/32/48/192.png`, `favicon.ico`, `apple-touch-icon.png`). Google tarda 1–4 semanas en actualizar el icono en SERP.
 
-- [ ] Revisar todas las imágenes del walkthrough y hero
-- [ ] Añadir `alt` descriptivos con keywords naturales
+### Día 10 — 30 jun 2026 — Alt text en imágenes ✅ COMPLETADO (código)
+
+- [x] Walkthrough: `imageAlt` descriptivo en los 6 pasos (`es.ts` / `en.ts`)
+- [x] `AppWalkthrough.tsx` usa `step.imageAlt` en lugar del título
+- [x] Logo: alt *"Inspechron — app de inspección técnica con IA"*
+- [x] Promo banner ya tenía alt en i18n
 - [ ] Deploy
 
-### Día 11 — 1 jul 2026 — Más contenido en home
+### Día 11 — 1 jul 2026 — Más contenido en home ✅ COMPLETADO (código)
 
-- [ ] Añadir sección de texto SEO (600–800 palabras) sobre inspección técnica
-- [ ] Incluir H2/H3 con keywords long-tail
-- [ ] Deploy y solicitar indexación
+- [x] Sección `SeoContent.tsx` (~650 palabras ES / EN)
+- [x] H2 principal + 4 H3 con keywords long-tail
+- [x] Integrada en `App.tsx` (entre Pricing y FAQ)
+- [ ] Deploy y solicitar indexación en GSC
 
-### Día 12 — 2 jul 2026 — Jerarquía de encabezados
+### Día 12 — 2 jul 2026 — Jerarquía de encabezados ✅ AUDITADO
 
-- [ ] Auditar: un solo H1, H2 por sección, sin saltos H1→H3
-- [ ] Corregir si hace falta
-- [ ] Deploy
+- [x] Un solo `<h1>` en `Hero.tsx` ✅
+- [x] Cada sección tiene su `<h2>`; subsecciones usan `<h3>` / `<h4>` correctamente
+- [x] Nueva sección SEO sigue la jerarquía H2 → H3
+- [x] No se requieren correcciones
 
 ### Día 13 — 3 jul 2026 — Analytics
 
@@ -303,3 +314,9 @@
 _Añade aquí observaciones cada día (impresiones GSC, errores, ideas de contenido)._
 
 - **22 jun 2026:** ✅ Día 5 completado. Instagram y Facebook enlazan a https://inspechron.com.
+- **22 jun 2026:** ✅ Días 8–9 desplegados. Title nuevo visible en producción. Canonical unificado.
+- **22 jun 2026:** ✅ Favicon real desplegado desde logo oficial. Esperar 1–4 semanas en Google SERP.
+- **21 jun 2026:** ✅ Días 10–12 completados en código (alt text, sección SEO, auditoría H1). Pendiente deploy.
+- **Pendiente:** `/privacy/` sigue siendo placeholder — Google puede mostrar texto genérico en el snippet.
+- **Pendiente:** Google puede tardar días/semanas en actualizar title/description en resultados de búsqueda.
+- **Pendiente:** Bing sitemap — comprobar si pasó de "Processing" a "Success".

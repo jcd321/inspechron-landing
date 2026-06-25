@@ -9,6 +9,7 @@ import Audience from './components/Audience'
 import Pricing from './components/Pricing'
 // import SocialProof from './components/SocialProof' // Tracción temprana — desactivada por ahora
 import FAQ from './components/FAQ'
+import SeoContent from './components/SeoContent'
 import Investors from './components/Investors'
 import FinalCTA from './components/FinalCTA'
 import FloatingCTA from './components/FloatingCTA'
@@ -56,6 +57,7 @@ export default function App() {
         <Audience />
         <Investors />
         <Pricing />
+        <SeoContent />
         {/* <SocialProof /> Tracción temprana — desactivada por ahora */}
         <FAQ />
         <FinalCTA />

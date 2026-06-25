@@ -44,7 +44,12 @@ export interface Translation {
   walkthrough: {
     title: string
     subtitle: string
-    steps: { title: string; tagline: string; description: string }[]
+    steps: { title: string; tagline: string; description: string; imageAlt: string }[]
+  }
+  seoContent: {
+    title: string
+    paragraphs: string[]
+    subsections: { title: string; text: string }[]
   }
   promoBanner: {
     alt: string

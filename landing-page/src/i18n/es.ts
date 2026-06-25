@@ -66,41 +66,78 @@ export const es: Translation = {
         tagline: 'Comienza una inspección profesional en segundos',
         description:
           'Configura tu proyecto y empieza a documentar hallazgos desde el primer segundo.',
+        imageAlt:
+          'Pantalla de inicio de Inspechron, app de inspección técnica para inspectores',
       },
       {
         title: 'Dashboard',
         tagline: 'Toda tu operación en un solo lugar',
         description:
           'Proyectos, inspecciones y reportes organizados sin hojas de cálculo ni WhatsApp.',
+        imageAlt:
+          'Dashboard de Inspechron con proyectos de inspección técnica organizados',
       },
       {
         title: 'Crear proyecto',
         tagline: 'Nunca pierdas el control de una propiedad',
         description:
           'Cada inmueble queda organizado con su historial, evidencia y reportes.',
+        imageAlt:
+          'Crear proyecto de inspección inmobiliaria en la app Inspechron',
       },
       {
         title: 'Crear secciones',
         tagline: 'Inspecciones estructuradas y consistentes',
         description:
           'Divide cada propiedad por áreas para documentar todo sin omisiones.',
+        imageAlt:
+          'Secciones de inspección técnica por áreas dentro de una propiedad',
       },
       {
         title: 'Detección IA',
         tagline: 'Detecta problemas antes de que cuesten dinero',
         description:
           'La IA identifica grietas, humedad, moho y defectos mientras inspeccionas.',
+        imageAlt:
+          'Detección de grietas y humedad con IA durante inspección técnica en campo',
       },
       {
         title: 'Reporte PDF',
         tagline: 'Entrega informes profesionales en segundos',
         description:
           'Genera reportes listos para clientes, contratistas o aseguradoras con un clic.',
+        imageAlt:
+          'Informe PDF de inspección técnica generado automáticamente por Inspechron',
       },
     ],
   },
   promoBanner: {
     alt: 'Inspechron — Plataforma de inspección impulsada por inteligencia artificial',
+  },
+  seoContent: {
+    title: 'Software de inspección técnica con IA para inspectores profesionales',
+    paragraphs: [
+      'La inspección técnica de viviendas e inmuebles exige precisión, evidencia documentada y informes claros para clientes, constructoras y aseguradoras. Sin embargo, muchos inspectores independientes siguen perdiendo horas organizando fotos, redactando hallazgos y armando reportes manualmente.',
+      'Inspechron es una app de inspección técnica asistida por inteligencia artificial diseñada para profesionales que necesitan inspeccionar más rápido, reducir errores y entregar informes PDF de calidad en minutos, no en horas.',
+    ],
+    subsections: [
+      {
+        title: '¿Para quién es Inspechron?',
+        text: 'Inspectores independientes, administradores de propiedades, empresas de control de calidad, constructoras y peritos que realizan inspecciones de entrada, salida, pre-compra o evaluación de daños. Si documentas propiedades en campo y entregas informes técnicos a terceros, Inspechron centraliza todo el flujo en una sola aplicación.',
+      },
+      {
+        title: 'Inspección con IA en tiempo real',
+        text: 'Durante la visita, capturas evidencia fotográfica y la IA detecta automáticamente defectos como grietas, humedad, deterioro de pintura y otros hallazgos visibles. Cada imagen queda vinculada al proyecto, la propiedad y el área inspeccionada, eliminando la evidencia dispersa en WhatsApp o galerías del teléfono.',
+      },
+      {
+        title: 'Informes PDF profesionales en segundos',
+        text: 'Al finalizar la inspección, generas un informe técnico PDF listo para entregar. Incluye evidencia organizada, análisis asistido por IA y un formato profesional que refuerza la credibilidad del inspector ante clientes y aseguradoras.',
+      },
+      {
+        title: 'Empieza gratis en Google Play',
+        text: 'Puedes probar Inspechron sin suscripción obligatoria. Descarga la app, recibe créditos de bienvenida y realiza tu primera inspección técnica con IA. Paga solo cuando generes un informe profesional completo.',
+      },
+    ],
   },
   features: {
     title: 'Funciones Clave',

@@ -26,7 +26,7 @@ export default function Logo({ className = '', variant = 'default' }: LogoProps)
   return (
     <img
       src={src}
-      alt="Inspechron"
+      alt="Inspechron — app de inspección técnica con IA"
       width={1024}
       height={588}
       onError={() => setError(true)}

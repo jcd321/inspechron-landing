@@ -32,7 +32,7 @@ export default function AppWalkthrough() {
                     <div className="relative aspect-[4/5] overflow-hidden bg-brand-950">
                       <img
                         src={WALKTHROUGH_IMAGES[index]}
-                        alt={step.title}
+                        alt={step.imageAlt}
                         width={280}
                         height={350}
                         loading="lazy"

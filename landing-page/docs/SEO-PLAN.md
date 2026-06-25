@@ -169,11 +169,12 @@
 - [x] Solicitar indexación de `/privacy/` en GSC
 - [ ] (Opcional) Actualizar README en repo GitHub con enlace a URL oficial
 
-### Día 13 — 3 jul 2026 — Analytics
+### Día 13 — 3 jul 2026 — Analytics ✅ COMPLETADO (código)
 
-- [ ] Activar Plausible o Google Analytics
-- [ ] Pegar ID en `src/config.ts` → `ANALYTICS_ID`
-- [ ] Verificar que recibe visitas en tiempo real
+- [x] Cuenta Google Analytics 4 — propiedad `ai-home-inspector-pro`
+- [x] Measurement ID `G-386LPNJDHN` en `src/config.ts`
+- [x] Script gtag.js integrado en `App.tsx`
+- [ ] Deploy en Hostinger + verificar visitas en tiempo real
 
 ### Día 14 — 4 jul 2026 — Velocidad (Core Web Vitals)
 

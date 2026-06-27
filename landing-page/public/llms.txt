@@ -1,0 +1,24 @@
+# Inspechron
+
+> Inspechron is an AI-assisted technical inspection app for professional home and property inspectors. It helps capture field evidence, detect defects with AI, and generate PDF reports in minutes.
+
+Inspechron serves independent inspectors, property managers, builders, and insurance adjusters who need structured inspections, photo evidence, and professional deliverables.
+
+## Product
+
+- [Home — Inspechron](https://inspechron.com/): Main landing page with features, pricing, and download links.
+- [Privacy policy](https://inspechron.com/privacy/): Data processing, account deletion, and Play Store disclosures.
+- [Google Play — Inspechron app](https://play.google.com/store/apps/details?id=com.aihomeinspectorpro.mobile): Download the mobile app.
+
+## Key topics
+
+- [Technical inspection software (ES)](https://inspechron.com/#inspeccion-tecnica): SEO content section on AI inspection workflows and PDF reports.
+- [Features](https://inspechron.com/#features): Core product capabilities.
+- [Pricing](https://inspechron.com/#pricing): Free trial and pay-per-report model.
+- [FAQ](https://inspechron.com/#faq): Common questions about AI detection, credits, and security.
+
+## Optional
+
+- [Sitemap](https://inspechron.com/sitemap.xml): Machine-readable list of public URLs.
+- [Instagram](https://www.instagram.com/inspechron/): Brand updates and product news.
+- [Facebook](https://www.facebook.com/profile.php?id=61590822568506): Company page.

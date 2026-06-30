@@ -10,6 +10,12 @@ Inspechron serves independent inspectors, property managers, builders, and insur
 - [Privacy policy](https://inspechron.com/privacy/): Data processing, account deletion, and Play Store disclosures.
 - [Google Play — Inspechron app](https://play.google.com/store/apps/details?id=com.aihomeinspectorpro.mobile): Download the mobile app.
 
+## SEO content pages (Spanish)
+
+- [Inspección técnica de vivienda](https://inspechron.com/inspeccion-tecnica-vivienda/): Guide for home technical inspections with AI.
+- [Para inspectores](https://inspechron.com/para-inspectores/): How Inspechron helps professional inspectors.
+- [Informe de inspección técnica en PDF](https://inspechron.com/informe-inspeccion-tecnica/): PDF report generation for technical inspections.
+
 ## Key topics
 
 - [Technical inspection software (ES)](https://inspechron.com/#inspeccion-tecnica): SEO content section on AI inspection workflows and PDF reports.

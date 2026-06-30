@@ -26,12 +26,14 @@ Publicamos URLs en lotes pequeños para que Google las indexe de forma ordenada 
 
 ### Archivos raíz a subir también
 
-| Archivo local | Destino Hostinger |
+**Importante:** Hostinger Git despliega desde la **raíz del repo** (`/` → `public_html`), NO desde `landing-page/public/`. Las páginas SEO deben existir en ambos sitios o copiarse a la raíz antes de cada deploy.
+
+| Archivo local (raíz repo) | Destino Hostinger |
 |---------------|-------------------|
-| `public/index.html` | `public_html/index.html` |
-| `public/sitemap.xml` | `public_html/sitemap.xml` |
-| `public/llms.txt` | `public_html/llms.txt` |
-| `public/.htaccess` | `public_html/.htaccess` |
+| `sitemap.xml` | `public_html/sitemap.xml` |
+| `index.html` | `public_html/index.html` |
+| `llms.txt` | `public_html/llms.txt` |
+| `app-inspeccion-tecnica/` etc. | `public_html/app-inspeccion-tecnica/` etc. |
 
 ### Páginas ya indexadas (no tocar contenido, solo enlaces actualizados)
 

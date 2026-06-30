@@ -76,18 +76,87 @@
       />
     </noscript>
 
-    <!-- JSON-LD fallback for crawlers without JS -->
+    <!-- JSON-LD: datos estructurados para Google y auditorías sin JS (SEMrush, etc.) -->
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "Organization",
-        "name": "Inspechron",
-        "url": "https://inspechron.com",
-        "logo": "https://inspechron.com/brand/logo.png",
-        "email": "inspechron@gmail.com",
-        "sameAs": [
-          "https://www.facebook.com/profile.php?id=61590822568506",
-          "https://www.instagram.com/inspechron/"
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://inspechron.com/#organization",
+            "name": "Inspechron",
+            "url": "https://inspechron.com",
+            "logo": "https://inspechron.com/brand/logo.png",
+            "email": "inspechron@gmail.com",
+            "sameAs": [
+              "https://www.facebook.com/profile.php?id=61590822568506",
+              "https://www.instagram.com/inspechron/"
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://inspechron.com/#website",
+            "name": "Inspechron",
+            "url": "https://inspechron.com",
+            "inLanguage": "es-ES",
+            "description": "App de inspección técnica con IA para inspectores profesionales. Detecta defectos en campo y genera informes PDF en segundos.",
+            "publisher": { "@id": "https://inspechron.com/#organization" }
+          },
+          {
+            "@type": "SoftwareApplication",
+            "@id": "https://inspechron.com/#app",
+            "name": "Inspechron",
+            "applicationCategory": "BusinessApplication",
+            "operatingSystem": "Android",
+            "url": "https://inspechron.com",
+            "downloadUrl": "https://play.google.com/store/apps/details?id=com.aihomeinspectorpro.mobile",
+            "description": "App de inspección técnica asistida por inteligencia artificial para inspectores, constructoras y aseguradoras.",
+            "offers": {
+              "@type": "Offer",
+              "price": "0",
+              "priceCurrency": "USD",
+              "description": "Prueba gratuita con créditos de bienvenida"
+            },
+            "publisher": { "@id": "https://inspechron.com/#organization" }
+          },
+          {
+            "@type": "FAQPage",
+            "@id": "https://inspechron.com/#faq",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "¿Realmente puedo generar informes profesionales en segundos?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Sí. Inspechron automatiza la detección de daños, organiza la evidencia fotográfica y genera informes técnicos listos para entregar, reduciendo significativamente el tiempo de documentación manual."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "¿Qué tipos de daños puede detectar la IA?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "La IA identifica grietas, humedad, moho, deterioro de pintura y otros defectos visibles comunes durante una inspección técnica."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "¿Cómo funciona el sistema de créditos?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Recibes créditos de bienvenida para probar la plataforma. Cada crédito permite generar un informe técnico profesional completo. Solo pagas cuando necesitas generar nuevos informes."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "¿Quién utiliza Inspechron?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Inspectores independientes, empresas de inspección, constructoras, administradores de propiedades, ajustadores y peritos que documentan propiedades en campo."
+                }
+              }
+            ]
+          }
         ]
       }
     </script>
@@ -98,15 +167,74 @@
     <link rel="stylesheet" crossorigin href="/assets/index-CO1nao-I.css">
   </head>
   <body>
-    <noscript>
-      <p>
-        Inspechron — Inspección técnica con IA en tiempo real. Detecta defectos en campo y
-        genera informes PDF profesionales.
-        <a href="https://play.google.com/store/apps/details?id=com.aihomeinspectorpro.mobile">
-          Descargar en Google Play
-        </a>
-      </p>
-    </noscript>
-    <div id="root"></div>
+    <!-- Contenido semántico inicial: visible para crawlers sin JS (SEMrush). React lo reemplaza al cargar. -->
+    <div id="root">
+      <main id="main-content">
+        <section id="hero">
+          <h1>Inspección técnica con IA en tiempo real</h1>
+          <p>
+            App de inspección técnica con IA para inspectores profesionales. Captura evidencia en
+            campo, detecta defectos automáticamente y genera informes PDF listos para clientes,
+            contratistas, constructoras y aseguradoras.
+          </p>
+          <p>
+            <a href="https://play.google.com/store/apps/details?id=com.aihomeinspectorpro.mobile">
+              Probar gratis en Google Play
+            </a>
+          </p>
+        </section>
+
+        <section id="features">
+          <h2>Funciones clave de Inspechron</h2>
+          <p>
+            Inspecciona más rápido, documenta mejor y genera informes profesionales con IA.
+            Detecta grietas, humedad y deterioro de pintura; organiza propiedades y proyectos;
+            y protege tu evidencia en la nube.
+          </p>
+        </section>
+
+        <section id="inspeccion-tecnica">
+          <h2>Software de inspección técnica con IA</h2>
+          <p>
+            La inspección técnica de viviendas e inmuebles exige precisión, evidencia documentada
+            e informes claros. Inspechron reduce horas de documentación manual y entrega informes
+            PDF de calidad en minutos.
+          </p>
+          <p>
+            Ideal para inspectores independientes, administradores de propiedades, constructoras,
+            empresas de control de calidad y peritos de seguros.
+          </p>
+        </section>
+
+        <section id="faq">
+          <h2>Preguntas frecuentes</h2>
+          <h3>¿Qué tipos de daños puede detectar la IA?</h3>
+          <p>
+            Grietas, humedad, moho, deterioro de pintura y otros defectos visibles durante una
+            inspección técnica en campo.
+          </p>
+          <h3>¿Cómo funciona el sistema de créditos?</h3>
+          <p>
+            Créditos de bienvenida para probar la app. Cada crédito genera un informe técnico
+            profesional completo en PDF.
+          </p>
+        </section>
+
+        <section id="recursos-seo" aria-label="Recursos relacionados">
+          <h2>Guías de inspección técnica</h2>
+          <ul>
+            <li><a href="/inspeccion-tecnica-vivienda/">Inspección técnica de vivienda</a></li>
+            <li><a href="/app-inspeccion-tecnica/">App de inspección técnica</a></li>
+            <li><a href="/software-inspeccion-tecnica/">Software de inspección técnica</a></li>
+            <li><a href="/deteccion-grietas-ia/">Detección de grietas con IA</a></li>
+            <li><a href="/inspeccion-humedad/">Inspección de humedad</a></li>
+            <li><a href="/informes-tecnicos-ia/">Informes técnicos con IA</a></li>
+            <li><a href="/para-inspectores/">Inspechron para inspectores</a></li>
+            <li><a href="/informe-inspeccion-tecnica/">Informe de inspección técnica en PDF</a></li>
+            <li><a href="/privacy/">Política de privacidad</a></li>
+          </ul>
+        </section>
+      </main>
+    </div>
   </body>
 </html>

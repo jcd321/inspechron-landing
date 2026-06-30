@@ -1,120 +1,141 @@
 # Plan SEO Inspechron — actualización 30 jun 2026
 
 **Sitio:** https://inspechron.com  
-**Herramientas activas:** Google Search Console, SEMrush Site Audit, PageSpeed Insights, Analytics  
-**Objetivo:** consolidar indexación, corregir avisos técnicos y ganar autoridad orgánica.
+**Herramientas:** Google Search Console (principal), PageSpeed Insights, Analytics  
+**SEMrush:** pospuesto (requiere plan de pago)
 
 ---
 
-## Diagnóstico actual (30 jun 2026)
+## Estrategia de deploy por fases
 
-### Google Search Console — URLs indexadas
-
-| URL | Estado |
-|-----|--------|
-| https://inspechron.com/ | Indexada |
-| https://inspechron.com/inspeccion-tecnica-vivienda/ | Indexada |
-| https://inspechron.com/para-inspectores/ | Indexada |
-| https://inspechron.com/informe-inspeccion-tecnica/ | Indexada (reemplaza la antigua `-pdf/`) |
-| https://inspechron.com/privacy/ | Indexada |
-
-**Nota:** La URL antigua `/informe-inspeccion-tecnica-pdf/` ya no se usa. Redirect 301 añadido en `.htaccess`.
-
-### SEMrush Site Audit — 96% salud del sitio
-
-| Métrica | Valor |
-|---------|-------|
-| Salud del sitio | 96% (mejor que el 92% promedio del top 10%) |
-| AI Search Health | 99% |
-| Páginas rastreadas | 5 |
-| Errores | 0 |
-| Advertencias | 3 (1 página cada una) |
-
-**Advertencias detectadas y causa:**
-
-1. **Missing h1** — La home es una SPA (React). SEMrush rastreó **sin JavaScript**. El HTML inicial solo tenía `<div id="root"></div>` vacío.
-2. **Low word count** — Mismo motivo: sin JS no ve el contenido de React.
-3. **Low text/HTML ratio** — Mucho JS/CSS en el bundle vs. poco HTML estático inicial.
-
-**Importante:** Con JavaScript activado, la app **sí tiene `<h1 id="hero-headline">`** y schema FAQPage/SoftwareApplication inyectado por React. Googlebot ejecuta JS; SEMrush en modo básico no.
-
-### Cambios implementados hoy (30 jun 2026)
-
-- [x] HTML semántico inicial dentro de `#root` (h1, h2, secciones, enlaces internos) para crawlers sin JS
-- [x] JSON-LD ampliado en `<head>`: Organization + WebSite + SoftwareApplication + FAQPage (`@graph`)
-- [x] Sitemap actualizado con las 5 URLs públicas (sin la URL `-pdf/` obsoleta)
-- [x] Redirect 301: `/informe-inspeccion-tecnica-pdf/` → `/informe-inspeccion-tecnica/`
-- [x] `llms.txt` actualizado con páginas SEO
-- [x] Banner bilingüe ES/EN funcionando en producción
+Publicamos URLs en lotes pequeños para que Google las indexe de forma ordenada y no subamos carpetas que aún no están en producción.
 
 ---
 
-## Opinión sobre las recomendaciones recibidas
+## FASE 1 — SUBIR HOY (5 URLs nuevas)
 
-| Recomendación | ¿Aplica? | Comentario |
-|---------------|----------|------------|
-| **Un solo `<h1>` por URL** | ✅ Sí | Ya existía en React; ahora también en HTML estático inicial |
-| **Contenido semántico (`<main>`, `<section>`)** | ✅ Sí | Implementado en HTML inicial + React ya lo usa |
-| **JSON-LD SoftwareApplication** | ✅ Sí | Ya estaba en React; duplicado en HTML estático para crawlers sin JS |
-| **JSON-LD FAQPage** | ✅ Sí | Igual: React + HTML estático |
-| **aggregateRating con estrellas** | ❌ No todavía | **No usar ratings inventados** (4.8 / 150). Google puede penalizar. Solo añadir cuando haya reseñas reales verificables en Play Store |
-| **Meta tags title/description** | ✅ Ya estaban bien | Mantener y ajustar según consultas en GSC |
-| **Open Graph** | ✅ Ya implementado | og-image apunta a `/banners/og-image.png` |
-| **Minificar CSS/JS** | ✅ Ya hecho | Vite/Rolldown genera bundles minificados |
-| **Lazy loading imágenes** | ✅ Parcial | Walkthrough usa lazy; banner usa eager (correcto para LCP) |
-| **WebP** | ⚠️ Pendiente | Subir `hero-banner-en.webp` real (~245 KB) en Hostinger |
+### URLs a subir a Hostinger
 
-**Ventaja competitiva real:** código propio, sin WordPress, bundles ligeros, control total del DOM y schema. Eso es correcto.
+| # | Carpeta local | URL producción | Keyword |
+|---|---------------|----------------|---------|
+| 1 | `public/app-inspeccion-tecnica/` | `/app-inspeccion-tecnica/` | app inspección técnica |
+| 2 | `public/software-inspeccion-tecnica/` | `/software-inspeccion-tecnica/` | software inspección técnica |
+| 3 | `public/deteccion-grietas-ia/` | `/deteccion-grietas-ia/` | detección grietas IA |
+| 4 | `public/inspeccion-humedad/` | `/inspeccion-humedad/` | inspección humedad |
+| 5 | `public/informes-tecnicos-ia/` | `/informes-tecnicos-ia/` | informes técnicos IA |
+
+### Archivos raíz a subir también
+
+| Archivo local | Destino Hostinger |
+|---------------|-------------------|
+| `public/index.html` | `public_html/index.html` |
+| `public/sitemap.xml` | `public_html/sitemap.xml` |
+| `public/llms.txt` | `public_html/llms.txt` |
+| `public/.htaccess` | `public_html/.htaccess` |
+
+### Páginas ya indexadas (no tocar contenido, solo enlaces actualizados)
+
+- `/` — home
+- `/inspeccion-tecnica-vivienda/`
+- `/para-inspectores/`
+- `/informe-inspeccion-tecnica/`
+- `/privacy/`
+
+### Sitemap Fase 1 = 10 URLs totales
+
+Home + 4 SEO indexadas + 5 nuevas + privacy
+
+### Checklist post-subida Fase 1
+
+- [ ] Subir las 5 carpetas nuevas a `public_html/`
+- [ ] Subir `index.html`, `sitemap.xml`, `llms.txt`, `.htaccess`
+- [ ] **NO subir** carpetas de `docs/seo-pending/` (ver Fase 2)
+- [ ] GSC → Sitemaps → reenviar `https://inspechron.com/sitemap.xml`
+- [ ] GSC → Inspección de URLs → solicitar indexación de las 5 URLs nuevas
+- [ ] Publicar en redes: `/app-inspeccion-tecnica/` o `/deteccion-grietas-ia/`
+- [ ] Revisar GSC en 5–7 días (impresiones, clics, consultas)
 
 ---
 
-## Fase 1 — Técnico (esta semana)
+## FASE 2 — OTRO DÍA (3 URLs guardadas)
 
-- [x] Corregir avisos SEMrush en home (HTML estático + schema)
-- [x] Actualizar sitemap en producción
-- [x] Redirect URL antigua `-pdf/`
-- [ ] Subir cambios a Hostinger (`index.html`, `sitemap.xml`, `.htaccess`, `llms.txt`)
-- [ ] Re-ejecutar Site Audit en SEMrush (botón **Rerun**)
-- [ ] Activar verificación Google en `<head>` (meta tag de Search Console)
-- [ ] Subir WebP inglés correcto (~245 KB) en `/banners/`
+**Ubicación en el repo:** `docs/seo-pending/` (NO están en `public/`)
 
-## Fase 2 — Contenido y enlaces internos (semana 1–2)
+| # | Carpeta | URL | Keyword | Estado |
+|---|---------|-----|---------|--------|
+| 1 | `inspeccion-pre-compra-vivienda/` | `/inspeccion-pre-compra-vivienda/` | inspección pre compra vivienda | Lista, pendiente deploy |
+| 2 | `deteccion-humedad-grietas-ia/` | `/deteccion-humedad-grietas-ia/` | detección humedad y grietas IA | Lista, pendiente deploy |
+| 3 | `informe-pre-entrega-vivienda/` | `/informe-pre-entrega-vivienda/` | informe pre entrega vivienda | Lista, pendiente deploy |
 
-- [ ] Añadir en React (cuando recuperes el código fuente) footer con links a páginas SEO
-- [ ] Mientras tanto: el HTML estático ya enlaza las 3 páginas SEO
-- [ ] Publicar en redes: https://inspechron.com/inspeccion-tecnica-vivienda/
-- [ ] Revisar en GSC impresiones/clics/consultas (3–5 días post-deploy)
+### Cuando toque Fase 2
 
-## Fase 3 — Autoridad (semana 3–4)
+1. Copiar cada carpeta de `docs/seo-pending/` → `public/`
+2. Sincronizar a `dist/`
+3. Añadir las 3 URLs al `sitemap.xml` (total 13 URLs)
+4. Añadir enlaces en `index.html` sección `#recursos-seo`
+5. Subir a Hostinger
+6. GSC → reenviar sitemap + solicitar indexación de las 3 URLs
 
-- [ ] Pedir reseñas en Google Play (base para aggregateRating real en el futuro)
-- [ ] Perfiles de empresa (LinkedIn, directorios sector construcción)
-- [ ] Segunda ola de contenido SEO (long-tail: humedad, grietas, pre-entrega)
-- [ ] Contactar blogs de construcción / inspección para menciones
+---
 
-## Fase 4 — Medición continua
+## FASE 3 — FUTURO (aún no creadas)
+
+| URL propuesta | Keyword | Prioridad |
+|---------------|---------|-----------|
+| `/inspeccion-tecnica-edificios/` | inspección técnica edificios | Alta |
+| `/inspeccion-lista-verificacion/` | lista verificación inspección | Media |
+| `/inspeccion-para-aseguradoras/` | perito seguros inspección | Media |
+
+**Evitar duplicar:** no crear `/software-inspeccion-edificios/` si ya existe `/inspeccion-tecnica-edificios/`.
+
+---
+
+## Estado GSC (30 jun 2026)
+
+| URL | Indexación |
+|-----|------------|
+| `/` | Indexada |
+| `/inspeccion-tecnica-vivienda/` | Indexada |
+| `/para-inspectores/` | Indexada |
+| `/informe-inspeccion-tecnica/` | Indexada |
+| `/privacy/` | Indexada |
+| 5 URLs Fase 1 | **Pendiente subir e indexar** |
+| 3 URLs Fase 2 | **En repo, no en producción** |
+
+**Nota:** `/informe-inspeccion-tecnica-pdf/` fue reemplazada por `/informe-inspeccion-tecnica/`. Redirect 301 en `.htaccess`.
+
+---
+
+## Cambios técnicos ya hechos (30 jun 2026)
+
+- [x] HTML semántico en `#root` de `index.html` (h1, secciones, enlaces)
+- [x] JSON-LD: Organization + WebSite + SoftwareApplication + FAQPage
+- [x] Banner bilingüe ES/EN funcionando
+- [x] Redirect 301 URL antigua `-pdf/`
+- [x] Enlaces internos solo a URLs en producción (Fase 1)
+- [x] 3 páginas Fase 2 movidas a `docs/seo-pending/`
+
+---
+
+## Pendientes generales
+
+- [ ] Meta tag verificación Google en `index.html`
+- [ ] WebP inglés correcto (~245 KB) en `/banners/hero-banner-en.webp`
+- [ ] Footer React con links SEO (cuando recuperes código fuente)
+- [ ] Reseñas Play Store → aggregateRating real en schema (futuro)
+
+---
+
+## Medición (sin SEMrush)
 
 | Herramienta | Qué revisar | Frecuencia |
 |-------------|-------------|------------|
 | Google Search Console | Indexación, consultas, CTR | Semanal |
-| SEMrush Site Audit | Salud técnica, warnings | Tras cada deploy |
-| PageSpeed Insights | LCP, CLS, INP | Mensual |
-| Analytics | Tráfico orgánico, conversiones Play Store | Semanal |
+| PageSpeed Insights | LCP, rendimiento | Mensual |
+| Analytics | Tráfico orgánico | Semanal |
 
 ---
 
-## Checklist post-deploy Hostinger
+## Nota
 
-1. Subir `public/index.html` → `public_html/index.html`
-2. Subir `public/sitemap.xml` → `public_html/sitemap.xml`
-3. Subir `public/.htaccess` → `public_html/.htaccess`
-4. Subir `public/llms.txt` → `public_html/llms.txt`
-5. En GSC → Sitemaps → reenviar sitemap
-6. En SEMrush → Site Audit → **Rerun**
-7. Probar redirect: `inspechron.com/informe-inspeccion-tecnica-pdf/` debe ir a `/informe-inspeccion-tecnica/`
-
----
-
-## Nota importante
-
-Actualizar este documento cada vez que se complete una acción relevante o cambien las métricas en GSC/SEMrush.
+Actualizar este documento al completar Fase 1 (deploy) y al iniciar Fase 2.

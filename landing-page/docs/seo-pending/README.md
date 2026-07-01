@@ -7,7 +7,10 @@ Cuando toque publicarlas:
 2. Sincronizar a `dist/`
 3. Añadir las 3 URLs al `sitemap.xml`
 4. Actualizar enlaces en `index.html` y páginas relacionadas
-5. GSC → solicitar indexación
+5. **Ejecutar `npm run sync:deploy`** (copia public → raíz repo para Hostinger)
+6. GSC → solicitar indexación
+
+**Importante:** Hostinger despliega desde la **raíz del repo**, no desde `public/`. Siempre ejecuta `npm run sync:deploy` antes de commit + push para que banners, assets e index no se desincronicen.
 
 | Carpeta | URL en producción | Keyword |
 |---------|-------------------|---------|

@@ -1,0 +1,10 @@
+# Dependencias locales (no subir a git)
+landing-page/node_modules/
+
+# Previews temporales de scripts
+landing-page/scripts/favicon-preview/
+
+# Sistema / editor
+.DS_Store
+Thumbs.db
+*.log

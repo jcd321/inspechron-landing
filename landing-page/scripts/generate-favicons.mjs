@@ -1,6 +1,6 @@
 /**
- * Genera favicons desde el icono de marca Inspechron (lupa del logo).
- * Fuente: brand/logo-source.png — recorte del símbolo central.
+ * Genera favicons con el logo completo Inspechron (fondo blanco, letras azules).
+ * Igual que perfil Facebook/Instagram. Fuente: brand/logo-source.png
  */
 import sharp from 'sharp';
 import path from 'path';
@@ -12,9 +12,6 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const repoRoot = path.resolve(__dirname, '../..');
 const source = path.join(repoRoot, 'brand/logo-source.png');
 
-/** Recorte del icono lupa (ajustado sobre logo-source 512×512) */
-const ICON_CROP = { left: 215, top: 140, width: 85, height: 230 };
-
 const OUTPUT_DIRS = [
   repoRoot,
   path.join(repoRoot, 'landing-page/public'),
@@ -22,14 +19,13 @@ const OUTPUT_DIRS = [
 ];
 
 async function makeIcon(size) {
-  const padding = size <= 32 ? 0.08 : 0.12;
+  const padding = size <= 32 ? 0.04 : 0.06;
   const inner = Math.round(size * (1 - padding * 2));
 
-  const cropped = await sharp(source)
-    .extract(ICON_CROP)
+  const logo = await sharp(source)
     .resize(inner, inner, {
       fit: 'contain',
-      background: { r: 255, g: 255, b: 255, alpha: 0 },
+      background: { r: 255, g: 255, b: 255, alpha: 1 },
     })
     .toBuffer();
 
@@ -41,7 +37,7 @@ async function makeIcon(size) {
       background: { r: 255, g: 255, b: 255, alpha: 1 },
     },
   })
-    .composite([{ input: cropped, gravity: 'center' }])
+    .composite([{ input: logo, gravity: 'center' }])
     .png()
     .toBuffer();
 }
@@ -66,9 +62,8 @@ for (const dir of OUTPUT_DIRS) {
   }
 
   const icoPath = path.join(dir, 'favicon.ico');
-  const icoBuffer = await pngToIco(pngPaths);
-  fs.writeFileSync(icoPath, icoBuffer);
+  fs.writeFileSync(icoPath, await pngToIco(pngPaths));
   console.log('✓', path.relative(repoRoot, icoPath));
 }
 
-console.log('\nFavicons generados desde brand/logo-source.png');
+console.log('\nFavicons generados: logo completo INSPECHRON (fondo blanco)');

@@ -19,6 +19,19 @@
     <meta name="theme-color" content="#0f172a" />
     <meta name="color-scheme" content="light dark" />
 
+    <!-- Shell de carga: evita flash de texto sin estilos antes de React -->
+    <script>document.documentElement.classList.add('app-loading');</script>
+    <style>
+      html.app-loading,
+      html.app-loading body {
+        background-color: #0f172a;
+        margin: 0;
+      }
+      html.app-loading #root:empty {
+        min-height: 100dvh;
+      }
+    </style>
+
     <!-- GOOGLE SITE VERIFICATION: pega aquí el meta tag que te da Search Console y haz deploy -->
     <!-- <meta name="google-site-verification" content="PEGA_TU_CODIGO_AQUI" /> -->
 
@@ -167,18 +180,6 @@
     <link rel="stylesheet" crossorigin href="/assets/index-CO1nao-I.css">
   </head>
   <body>
-    <!-- Fondo oscuro mientras React monta: evita flash de texto SEO sin estilos -->
-    <style>
-      html,
-      body {
-        margin: 0;
-      }
-      #root:empty {
-        min-height: 100dvh;
-        background-color: #0f172a;
-      }
-    </style>
-
     <div id="root"></div>
 
     <!-- Contenido semántico para crawlers sin JS (Google indexa con JS; bots leen noscript) -->
@@ -250,5 +251,13 @@
         </section>
       </main>
     </noscript>
+    <script>
+      window.addEventListener('pageshow', function (e) {
+        if (e.persisted) {
+          var root = document.getElementById('root');
+          if (root) root.replaceChildren();
+        }
+      });
+    </script>
   </body>
 </html>

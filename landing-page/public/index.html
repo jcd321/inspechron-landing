@@ -167,8 +167,22 @@
     <link rel="stylesheet" crossorigin href="/assets/index-CO1nao-I.css">
   </head>
   <body>
-    <!-- Contenido semántico inicial: visible para crawlers sin JS (SEMrush). React lo reemplaza al cargar. -->
-    <div id="root">
+    <!-- Fondo oscuro mientras React monta: evita flash de texto SEO sin estilos -->
+    <style>
+      html,
+      body {
+        margin: 0;
+      }
+      #root:empty {
+        min-height: 100dvh;
+        background-color: #0f172a;
+      }
+    </style>
+
+    <div id="root"></div>
+
+    <!-- Contenido semántico para crawlers sin JS (Google indexa con JS; bots leen noscript) -->
+    <noscript>
       <main id="main-content">
         <section id="hero">
           <h1>Inspección técnica con IA en tiempo real</h1>
@@ -235,6 +249,6 @@
           </ul>
         </section>
       </main>
-    </div>
+    </noscript>
   </body>
 </html>

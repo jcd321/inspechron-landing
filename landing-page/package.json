@@ -8,7 +8,8 @@
     "build": "tsc && vite build",
     "preview": "vite preview",
     "favicons": "node scripts/generate-favicons.mjs",
-    "sync:deploy": "node scripts/sync-deploy-root.mjs"
+    "sync:deploy": "node scripts/sync-deploy-root.mjs",
+    "fix:nav": "node scripts/fix-nav-overlays.mjs"
   },
   "devDependencies": {
     "@tailwindcss/vite": "^4.3.1",

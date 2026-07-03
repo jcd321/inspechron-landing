@@ -29,8 +29,11 @@
   RewriteRule ^index\.html$ - [L]
   RewriteRule ^(robots\.txt|sitemap\.xml|llms\.txt|favicon\.ico|favicon-16\.png|favicon-32\.png|favicon-48\.png|favicon-192\.png|favicon\.svg|apple-touch-icon\.png)$ - [L]
 
+  # 301 redirect: duplicate page → canonical version
+  RewriteRule ^informe-inspeccion-tecnica/?$ /informe-inspeccion-tecnica-pdf/ [R=301,L]
+
   # SEO landing pages — serve static HTML directly
-  RewriteRule ^(inspeccion-tecnica-vivienda|para-inspectores|informe-inspeccion-tecnica-pdf|privacy|blog/.+)(/|/index\.html)?$ - [L]
+  RewriteRule ^(inspeccion-tecnica-vivienda|para-inspectores|informe-inspeccion-tecnica-pdf|privacy|blog/.+|app-inspeccion-tecnica|deteccion-grietas-ia|deteccion-humedad-grietas-ia|informe-pre-entrega-vivienda|informes-tecnicos-ia|inspeccion-humedad|inspeccion-pre-compra-vivienda|software-inspeccion-tecnica)(/|/index\.html)?$ - [L]
 
   RewriteCond %{REQUEST_FILENAME} !-f
   RewriteCond %{REQUEST_FILENAME} !-d

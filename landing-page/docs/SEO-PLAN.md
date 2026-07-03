@@ -3,7 +3,7 @@
 **Sitio:** https://inspechron.com  
 **Objetivo:** Aparecer en Google para búsquedas de inspección técnica, inspectores y la marca Inspechron.  
 **Inicio del plan:** 21 de junio de 2026  
-**Última actualización:** 24 de junio de 2026 — Privacidad en web ✅ | Reindexación home + privacy solicitada ✅
+**Última actualización:** 3 de julio de 2026 — Semana 3 en curso: 3 landing pages SEO mejoradas + enlaces internos + sitemap actualizado
 
 ---
 
@@ -13,7 +13,7 @@
 |--------|---------|--------|
 | Semana 1 | Indexación y enlaces off-page | 🟢 Completada (días 1–7) |
 | Semana 2 | Optimización on-page | 🟢 Completada (días 8–14) |
-| Semana 3 | Contenido y long-tail | ⬜ Pendiente |
+| Semana 3 | Contenido y long-tail | 🟡 En curso (días 15–18 completados) |
 | Semana 4 | Autoridad y off-page | ⬜ Pendiente |
 
 ---
@@ -187,43 +187,60 @@
 
 ## Semana 3 — Contenido y long-tail
 
-### Día 15 — 5 jul 2026 — Página `/inspeccion-tecnica-vivienda`
+### Día 15 — 3 jul 2026 — Página `/inspeccion-tecnica-vivienda` ✅ COMPLETADO
 
-- [ ] Crear página con 500+ palabras únicas
-- [ ] Title, description y schema propios
-- [ ] Añadir al sitemap
+- [x] Crear página con 500+ palabras únicas
+- [x] Title, description y schema propios (WebPage + BreadcrumbList JSON-LD)
+- [x] Open Graph + Twitter Cards para compartir en redes
+- [x] GA4 tracking diferido (mismo patrón que la home)
+- [x] Fonts async (preload + onload, sin render-blocking)
+- [x] Cross-links a las otras 2 páginas SEO
+- [x] Footer con navegación interna
+- [x] Añadir al sitemap
 
-### Día 16 — 6 jul 2026 — Página `/para-inspectores`
+### Día 16 — 3 jul 2026 — Página `/para-inspectores` ✅ COMPLETADO
 
-- [ ] Landing para inspectores independientes
-- [ ] CTA a Google Play
-- [ ] Añadir al sitemap
+- [x] Landing para inspectores independientes
+- [x] CTA a Google Play
+- [x] Schema.org JSON-LD + Open Graph + Twitter Cards
+- [x] GA4 tracking diferido + fonts async
+- [x] Cross-links a las otras 2 páginas SEO
+- [x] Añadir al sitemap
 
-### Día 17 — 7 jul 2026 — Página `/informe-inspeccion-tecnica-pdf`
+### Día 17 — 3 jul 2026 — Página `/informe-inspeccion-tecnica-pdf` ✅ COMPLETADO
 
-- [ ] Contenido sobre informes PDF con IA
-- [ ] Enlazar desde home (enlace interno)
-- [ ] Añadir al sitemap
+- [x] Contenido sobre informes PDF con IA
+- [x] Schema.org JSON-LD + Open Graph + Twitter Cards
+- [x] GA4 tracking diferido + fonts async
+- [x] Enlazar desde home → Footer "Recursos" con 3 enlaces internos
+- [x] Cross-links a las otras 2 páginas SEO
+- [x] Añadir al sitemap
 
-### Día 18 — 8 jul 2026 — Actualizar sitemap
+### Día 18 — 3 jul 2026 — Actualizar sitemap ✅ COMPLETADO
 
-- [ ] Incluir todas las URLs nuevas
-- [ ] Actualizar `lastmod`
-- [ ] Reenviar sitemap en GSC
+- [x] Incluir todas las URLs nuevas (ya estaban, confirmado)
+- [x] Actualizar `lastmod` a 2026-07-03
+- [x] Subir prioridad de páginas SEO de 0.7 → 0.8
+- [x] Actualizar `llms.txt` con las 3 nuevas páginas
+- [x] `.htaccess` actualizado para servir páginas estáticas directamente
+- [ ] **TÚ:** Reenviar sitemap en GSC (ir a Sitemaps → reenviar `sitemap.xml`)
 
-### Día 19 — 9 jul 2026 — Indexar páginas nuevas
+### Día 19 — Indexar páginas nuevas
 
-- [ ] Solicitar indexación de cada URL nueva en GSC
-- [ ] Comprobar que responden 200 OK
+- [ ] **TÚ:** Solicitar indexación en GSC de:
+  - `https://inspechron.com/inspeccion-tecnica-vivienda/`
+  - `https://inspechron.com/para-inspectores/`
+  - `https://inspechron.com/informe-inspeccion-tecnica-pdf/`
+- [ ] Comprobar que las 3 responden 200 OK (ya verificado en producción)
 
-### Día 20 — 10 jul 2026 — Redes sociales
+### Día 20 — Redes sociales
 
-- [ ] Publicar 1 post en Instagram/Facebook enlazando a una página SEO
-- [ ] Usar hashtags: #inspeccióntécnica #inspectores #proptech
+- [ ] **TÚ:** Publicar 1 post en Instagram/Facebook enlazando a una página SEO
+- [ ] Usar hashtags: #inspeccióntécnica #inspectores #proptech #inspechron
 
-### Día 21 — 11 jul 2026 — Revisión GSC
+### Día 21 — Revisión GSC
 
-- [ ] Revisar consultas con impresiones en GSC → Rendimiento
+- [ ] **TÚ:** Revisar consultas con impresiones en GSC → Rendimiento
 - [ ] Anotar top 5 consultas
 - [ ] Ajustar contenido según consultas reales
 
@@ -330,3 +347,4 @@ _Añade aquí observaciones cada día (impresiones GSC, errores, ideas de conten
 - **24 jun 2026:** ✅ GA4 activo (`G-386LPNJDHN`). PageSpeed auditado. Optimización WebP + fonts + cache desplegada.
 - **Pendiente:** Google puede tardar días/semanas en actualizar title/description en resultados de búsqueda.
 - **Pendiente:** Bing sitemap — comprobar si pasó de "Processing" a "Success".
+- **3 jul 2026:** ✅ Semana 3 — Días 15-18 completados. 3 landing pages SEO mejoradas (Schema.org, OG, GA4, fonts async, cross-links, footer). Enlaces internos desde el home footer. Sitemap actualizado. `.htaccess` y `llms.txt` actualizados.

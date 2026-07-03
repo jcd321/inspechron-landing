@@ -356,11 +356,15 @@ export const es: Translation = {
   footer: {
     tagline: 'Inspección inteligente en tiempo real',
     product: 'Producto',
+    resources: 'Recursos',
     legal: 'Legal',
     contact: 'Contacto',
     privacy: 'Política de privacidad',
     playStore: 'Google Play',
     followUs: 'Síguenos',
     copyright: '© 2026 Inspechron. Todos los derechos reservados.',
+    inspectionPage: 'Inspección de vivienda',
+    inspectorsPage: 'Para inspectores',
+    reportPage: 'Informes PDF',
   },
 }

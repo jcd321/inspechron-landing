@@ -122,11 +122,15 @@ export interface Translation {
   footer: {
     tagline: string
     product: string
+    resources: string
     legal: string
     contact: string
     privacy: string
     playStore: string
     followUs: string
     copyright: string
+    inspectionPage: string
+    inspectorsPage: string
+    reportPage: string
   }
 }

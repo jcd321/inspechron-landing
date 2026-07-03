@@ -3,20 +3,79 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Informe inspección técnica PDF — Inspechron</title>
+    <title>Informe de inspección técnica en PDF — Inspechron</title>
     <meta
       name="description"
-      content="Genera informes de inspección técnica en PDF con Inspechron. Documenta observaciones, evidencia y recomendaciones profesionales en segundos."
+      content="Genera informes de inspección técnica en PDF con Inspechron. Documenta observaciones, evidencia fotográfica y recomendaciones profesionales en segundos con IA."
     />
     <meta name="robots" content="index, follow" />
     <link rel="canonical" href="https://inspechron.com/informe-inspeccion-tecnica-pdf/" />
     <link rel="icon" href="/favicon.ico" sizes="any" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://inspechron.com/informe-inspeccion-tecnica-pdf/" />
+    <meta property="og:title" content="Informe de inspección técnica en PDF — Inspechron" />
+    <meta property="og:description" content="Genera informes técnicos de inspección en PDF con IA: fotos, hallazgos, observaciones y recomendaciones profesionales." />
+    <meta property="og:image" content="https://inspechron.com/banners/hero-banner.webp" />
+    <meta property="og:site_name" content="Inspechron" />
+    <meta property="og:locale" content="es_ES" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Informe de inspección técnica en PDF — Inspechron" />
+    <meta name="twitter:description" content="Genera informes técnicos de inspección en PDF con IA: fotos, hallazgos, observaciones y recomendaciones profesionales." />
+    <meta name="twitter:image" content="https://inspechron.com/banners/hero-banner.webp" />
+
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebPage",
+          "@id": "https://inspechron.com/informe-inspeccion-tecnica-pdf/",
+          "url": "https://inspechron.com/informe-inspeccion-tecnica-pdf/",
+          "name": "Informe de inspección técnica en PDF — Inspechron",
+          "description": "Genera informes de inspección técnica en PDF con Inspechron. Documenta observaciones, evidencia fotográfica y recomendaciones profesionales en segundos con IA.",
+          "isPartOf": { "@id": "https://inspechron.com/#website" },
+          "inLanguage": "es",
+          "breadcrumb": { "@id": "https://inspechron.com/informe-inspeccion-tecnica-pdf/#breadcrumb" }
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://inspechron.com/informe-inspeccion-tecnica-pdf/#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Inicio",
+              "item": "https://inspechron.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Informe de inspección técnica PDF"
+            }
+          ]
+        }
+      ]
+    }
+    </script>
+
+    <!-- Fonts: async to avoid render-blocking -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
+      rel="preload"
+      as="style"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      onload="this.onload=null;this.rel='stylesheet'"
     />
+    <noscript>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" />
+    </noscript>
+
     <style>
       :root {
         --brand-950: #0f172a;
@@ -29,7 +88,7 @@
       }
       * { box-sizing: border-box; }
       body {
-        font-family: Inter, system-ui, sans-serif;
+        font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
         margin: 0;
         color: var(--brand-950);
         line-height: 1.75;
@@ -68,7 +127,7 @@
       }
       h2:first-of-type { border-top: none; margin-top: 1.5rem; }
       p, li { color: var(--slate-600); font-size: 1rem; margin: 0 0 1rem; }
-      ul { margin: 0 0 1rem 1.25rem; }
+      ul, ol { margin: 0 0 1rem 1.25rem; }
       li { margin-bottom: 0.5rem; }
       a { color: var(--brand-700); }
       a:hover { text-decoration: underline; }
@@ -82,13 +141,44 @@
         text-decoration: none;
         font-weight: 600;
       }
-      .footnote {
+      .cta:hover { background: var(--brand-800); text-decoration: none; }
+      .related {
         margin-top: 3rem;
         padding-top: 1.5rem;
         border-top: 1px solid var(--slate-200);
-        font-size: 0.9rem;
-        color: var(--slate-600);
       }
+      .related h2 { border-top: none; margin-top: 0; padding-top: 0; }
+      .related-links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.75rem;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+      .related-links a {
+        display: inline-block;
+        padding: 0.5rem 1rem;
+        border-radius: 999px;
+        background: #e0e7ff;
+        color: var(--brand-800);
+        font-size: 0.9rem;
+        font-weight: 500;
+        text-decoration: none;
+      }
+      .related-links a:hover { background: #c7d2fe; }
+      .site-footer {
+        background: var(--brand-950);
+        color: #94a3b8;
+        padding: 2rem 1.5rem;
+        text-align: center;
+        font-size: 0.85rem;
+        line-height: 1.8;
+      }
+      .site-footer a { color: #cbd5e1; text-decoration: none; }
+      .site-footer a:hover { color: #fff; }
+      .footer-links { margin-bottom: 0.75rem; }
+      .footer-links a + a::before { content: " · "; color: #475569; }
     </style>
   </head>
   <body>
@@ -124,29 +214,57 @@
       </p>
 
       <h2>Cómo genera el informe Inspechron</h2>
-      <p>
-        1. Registra la propiedad y la inspección en la app.
-      </p>
-      <p>
-        2. Toma fotos, agrega observaciones y etiqueta cada hallazgo.
-      </p>
-      <p>
-        3. La IA sugiere categorías y ayuda a completar la documentación.
-      </p>
-      <p>
-        4. Exporta un PDF profesional listo para enviar por correo o entregar en obra.
-      </p>
+      <ol>
+        <li>Registra la propiedad y la inspección en la app.</li>
+        <li>Toma fotos, agrega observaciones y etiqueta cada hallazgo.</li>
+        <li>La IA sugiere categorías y ayuda a completar la documentación.</li>
+        <li>Exporta un PDF profesional listo para enviar por correo o entregar en obra.</li>
+      </ol>
 
       <h2>Ideal para informes de obra, viviendas y proyectos de mantenimiento</h2>
       <p>
-        Ya sea una inspección de vivienda, un informe de pre-entrega u una evaluación técnica, el PDF generado por Inspechron es un recurso que puedes usar en licitaciones, revisiones de calidad y auditorías.
+        Ya sea una inspección de vivienda, un informe de pre-entrega o una evaluación técnica, el PDF generado por Inspechron es un recurso que puedes usar en licitaciones, revisiones de calidad y auditorías.
+      </p>
+      <p>
+        Generar el informe en PDF desde la app reduce la dependencia de documentos manuales y mejora la consistencia entre inspecciones.
       </p>
 
-      <div class="footnote">
-        <p>
-          Generar el informe en PDF desde la app reduce la dependencia de documentos manuales y mejora la consistencia entre inspecciones.
-        </p>
+      <div class="related">
+        <h2>Contenido relacionado</h2>
+        <ul class="related-links">
+          <li><a href="/inspeccion-tecnica-vivienda/">Inspección técnica de vivienda</a></li>
+          <li><a href="/para-inspectores/">App para inspectores</a></li>
+          <li><a href="/">Inspechron — Inicio</a></li>
+        </ul>
       </div>
     </main>
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="/">Inicio</a>
+        <a href="/inspeccion-tecnica-vivienda/">Inspección de vivienda</a>
+        <a href="/para-inspectores/">Para inspectores</a>
+        <a href="/privacy/">Privacidad</a>
+      </div>
+      <p>© 2026 Inspechron. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- GA4 (deferred) -->
+    <script>
+      (function(){
+        var s='requestIdleCallback'in window
+          ?function(c){requestIdleCallback(c)}
+          :function(c){setTimeout(c,2000)};
+        s(function(){
+          var l=document.createElement('script');
+          l.async=true;
+          l.src='https://www.googletagmanager.com/gtag/js?id=G-386LPNJDHN';
+          document.head.appendChild(l);
+          window.dataLayer=window.dataLayer||[];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js',new Date());
+          gtag('config','G-386LPNJDHN');
+        });
+      })();
+    </script>
   </body>
 </html>

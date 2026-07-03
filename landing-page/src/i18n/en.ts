@@ -350,11 +350,15 @@ export const en: Translation = {
   footer: {
     tagline: 'Intelligent real-time inspection',
     product: 'Product',
+    resources: 'Resources',
     legal: 'Legal',
     contact: 'Contact',
     privacy: 'Privacy policy',
     playStore: 'Google Play',
     followUs: 'Follow us',
     copyright: '© 2026 Inspechron. All rights reserved.',
+    inspectionPage: 'Home inspection',
+    inspectorsPage: 'For inspectors',
+    reportPage: 'PDF reports',
   },
 }

@@ -12,6 +12,9 @@ Inspechron serves independent inspectors, property managers, builders, and insur
 
 ## Key topics
 
+- [Home inspection with AI](https://inspechron.com/inspeccion-tecnica-vivienda/): How Inspechron streamlines property and housing inspections.
+- [For inspectors](https://inspechron.com/para-inspectores/): Landing page for independent inspectors and small teams.
+- [PDF inspection reports](https://inspechron.com/informe-inspeccion-tecnica-pdf/): How Inspechron generates professional PDF reports with AI.
 - [Technical inspection software (ES)](https://inspechron.com/#inspeccion-tecnica): SEO content section on AI inspection workflows and PDF reports.
 - [Features](https://inspechron.com/#features): Core product capabilities.
 - [Pricing](https://inspechron.com/#pricing): Free trial and pay-per-report model.

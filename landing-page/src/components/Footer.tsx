@@ -16,7 +16,7 @@ export default function Footer() {
         <h2 id="footer-heading" className="sr-only">
           {t.a11y.footerNav}
         </h2>
-        <div className="grid gap-10 md:grid-cols-4">
+        <div className="grid gap-10 md:grid-cols-5">
           <div className="md:col-span-1">
             <div className="flex flex-col items-start gap-1">
               <Logo variant="white" className="h-14 w-auto sm:h-[3.75rem] md:h-16" />
@@ -49,6 +49,27 @@ export default function Footer() {
                   className="text-brand-200 hover:text-white"
                 >
                   {t.footer.playStore}
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 className="text-sm font-semibold text-white">{t.footer.resources}</h3>
+            <ul className="mt-3 space-y-2 text-sm">
+              <li>
+                <a href="/inspeccion-tecnica-vivienda/" className="text-brand-200 hover:text-white">
+                  {t.footer.inspectionPage}
+                </a>
+              </li>
+              <li>
+                <a href="/para-inspectores/" className="text-brand-200 hover:text-white">
+                  {t.footer.inspectorsPage}
+                </a>
+              </li>
+              <li>
+                <a href="/informe-inspeccion-tecnica-pdf/" className="text-brand-200 hover:text-white">
+                  {t.footer.reportPage}
                 </a>
               </li>
             </ul>

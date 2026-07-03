@@ -360,5 +360,6 @@ export const en: Translation = {
     inspectionPage: 'Home inspection',
     inspectorsPage: 'For inspectors',
     reportPage: 'PDF reports',
+    blogGuide: 'Inspection guide',
   },
 }

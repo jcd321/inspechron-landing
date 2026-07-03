@@ -248,21 +248,27 @@
 
 ## Semana 4 — Autoridad y off-page
 
-### Día 22 — 12 jul 2026 — Reseñas Google Play
+### Día 22 — Reseñas Google Play
 
-- [ ] Pedir 3–5 reseñas a usuarios piloto
-- [ ] Responder cada reseña en Play Store
+- [ ] **TÚ:** Pedir 3–5 reseñas a usuarios piloto
+- [ ] **TÚ:** Responder cada reseña en Play Store
 
 ### Día 23 — 13 jul 2026 — Directorios
 
 - [ ] Crear perfil LinkedIn Company para Inspechron
 - [ ] Añadir enlace a la web en el perfil
 
-### Día 24 — 14 jul 2026 — Artículo guía
+### Día 24 — 3 jul 2026 — Artículo guía ✅ COMPLETADO
 
-- [ ] Escribir: "Cómo hacer una inspección técnica de vivienda en 2026"
-- [ ] Publicar como página `/blog/inspeccion-tecnica-guia` o similar
-- [ ] Añadir al sitemap
+- [x] Artículo: "Cómo hacer una inspección técnica de vivienda en 2026" (~1200 palabras)
+- [x] Publicado en `/blog/inspeccion-tecnica-guia/`
+- [x] Schema.org: Article + HowTo + BreadcrumbList
+- [x] Open Graph (`og:type=article`) + Twitter Cards
+- [x] GA4 tracking diferido + fonts async
+- [x] Cross-links a las 3 landing pages + home
+- [x] Añadido al sitemap (prioridad 0.9)
+- [x] Enlace interno desde Footer del home ("Guía de inspección")
+- [x] Actualizado `llms.txt` y `.htaccess`
 
 ### Día 25 — 15 jul 2026 — Outreach
 
@@ -348,3 +354,4 @@ _Añade aquí observaciones cada día (impresiones GSC, errores, ideas de conten
 - **Pendiente:** Google puede tardar días/semanas en actualizar title/description en resultados de búsqueda.
 - **Pendiente:** Bing sitemap — comprobar si pasó de "Processing" a "Success".
 - **3 jul 2026:** ✅ Semana 3 — Días 15-18 completados. 3 landing pages SEO mejoradas (Schema.org, OG, GA4, fonts async, cross-links, footer). Enlaces internos desde el home footer. Sitemap actualizado. `.htaccess` y `llms.txt` actualizados.
+- **3 jul 2026:** ✅ Día 24 adelantado. Artículo guía publicado en `/blog/inspeccion-tecnica-guia/` (~1200 palabras, Schema Article+HowTo). Enlace interno desde footer. Sitemap y llms.txt actualizados.

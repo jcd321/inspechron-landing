@@ -366,5 +366,6 @@ export const es: Translation = {
     inspectionPage: 'Inspección de vivienda',
     inspectorsPage: 'Para inspectores',
     reportPage: 'Informes PDF',
+    blogGuide: 'Guía de inspección',
   },
 }

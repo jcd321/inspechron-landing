@@ -132,5 +132,6 @@ export interface Translation {
     inspectionPage: string
     inspectorsPage: string
     reportPage: string
+    blogGuide: string
   }
 }

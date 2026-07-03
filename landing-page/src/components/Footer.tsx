@@ -72,6 +72,11 @@ export default function Footer() {
                   {t.footer.reportPage}
                 </a>
               </li>
+              <li>
+                <a href="/blog/inspeccion-tecnica-guia/" className="text-brand-200 hover:text-white">
+                  {t.footer.blogGuide}
+                </a>
+              </li>
             </ul>
           </div>
 

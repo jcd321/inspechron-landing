@@ -3,7 +3,7 @@
 **Sitio:** https://inspechron.com  
 **Objetivo:** Aparecer en Google para búsquedas de inspección técnica, inspectores y la marca Inspechron.  
 **Inicio del plan:** 21 de junio de 2026  
-**Última actualización:** 3 de julio de 2026 — Semana 3 en curso: 3 landing pages SEO mejoradas + enlaces internos + sitemap actualizado
+**Última actualización:** 3 de julio de 2026 — SEO completo en las 14 páginas (Schema, OG, GA4, fonts async, cross-links, footer, 301 redirect duplicado)
 
 ---
 
@@ -355,3 +355,5 @@ _Añade aquí observaciones cada día (impresiones GSC, errores, ideas de conten
 - **Pendiente:** Bing sitemap — comprobar si pasó de "Processing" a "Success".
 - **3 jul 2026:** ✅ Semana 3 — Días 15-18 completados. 3 landing pages SEO mejoradas (Schema.org, OG, GA4, fonts async, cross-links, footer). Enlaces internos desde el home footer. Sitemap actualizado. `.htaccess` y `llms.txt` actualizados.
 - **3 jul 2026:** ✅ Día 24 adelantado. Artículo guía publicado en `/blog/inspeccion-tecnica-guia/` (~1200 palabras, Schema Article+HowTo). Enlace interno desde footer. Sitemap y llms.txt actualizados.
+- **3 jul 2026:** ✅ Auditoría completa de las 8 páginas legacy (app-inspeccion-tecnica, deteccion-grietas-ia, deteccion-humedad-grietas-ia, informe-pre-entrega-vivienda, informes-tecnicos-ia, inspeccion-humedad, inspeccion-pre-compra-vivienda, software-inspeccion-tecnica). Se añadió: Schema.org JSON-LD (WebPage + BreadcrumbList), Open Graph, Twitter Cards, GA4 diferido, fonts async, footer con navegación interna. Se corrigieron todos los enlaces al duplicado `/informe-inspeccion-tecnica/` → `/informe-inspeccion-tecnica-pdf/`.
+- **3 jul 2026:** 🔄 Redirect 301 activo: `/informe-inspeccion-tecnica/` → `/informe-inspeccion-tecnica-pdf/` en `.htaccess`. Sitemap con 14 URLs completas. GSC muestra 10 páginas indexadas.

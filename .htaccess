@@ -30,7 +30,7 @@
   RewriteRule ^(robots\.txt|sitemap\.xml|llms\.txt|favicon\.ico|favicon-16\.png|favicon-32\.png|favicon-48\.png|favicon-192\.png|favicon\.svg|apple-touch-icon\.png)$ - [L]
 
   # SEO landing pages — serve static HTML directly
-  RewriteRule ^(inspeccion-tecnica-vivienda|para-inspectores|informe-inspeccion-tecnica-pdf|privacy)(/|/index\.html)?$ - [L]
+  RewriteRule ^(inspeccion-tecnica-vivienda|para-inspectores|informe-inspeccion-tecnica-pdf|privacy|blog/.+)(/|/index\.html)?$ - [L]
 
   RewriteCond %{REQUEST_FILENAME} !-f
   RewriteCond %{REQUEST_FILENAME} !-d
